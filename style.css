@@ -1,0 +1,182 @@
+:root {
+  --bg: #fff;
+  --bgSubtle:#f8f8f8;
+  --borderColor: #e0e0e0;
+  --filterBtn: #001219;
+}
+
+body.dark {
+  --bg: #001219;
+  --bgSubtle:#031e28;
+  --borderColor: #003A52;
+  --filterBtn: #f4f4f4;
+  color: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+html {
+  width: 400px;
+  height: 400px;
+}
+
+body {
+  background: var(--bg);
+  overflow: auto;
+  color: #272727;
+  padding-bottom: 1rem;
+}
+
+h1{
+    font-weight: 200;
+}
+
+input {
+  padding: 12px 16px;
+  width:calc(100% - 24px);
+  background: transparent;
+  color: inherit;
+  margin: 0 12px;
+  border-radius: 24px;
+  border: 1px solid var(--borderColor);
+}
+
+header#topbar {
+  display: flex;
+  align-items: center;
+  padding:24px;
+  justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:12px;
+    padding:0 12px;
+}
+
+ul > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: flex-start;
+  border-radius: 1rem;
+  color:#000;
+  font-size:1.1rem;
+  font-weight: 600;
+}
+
+#filters{
+    display: flex;
+    gap:.5rem;
+    padding: 1rem;
+}
+
+#filters button{
+    padding:5px 15px;
+    border-radius: 50px;
+    font-size:0.9rem;
+    border:1px solid var(--filterBtn);
+    color:var(--filterBtn);
+    font-weight: 400;
+}
+
+#not{
+    width:100%;
+    padding:0;
+}
+
+.chosen{
+    background: var(--filterBtn);
+    color:var(--bg) !important;
+    font-weight: 900 !important;
+}
+
+ul > div:nth-child(5n){
+    background: #FDFFB6 ;
+    color:#000
+}
+ul > div:nth-child(5n+1){
+    background: #CAFFBF;
+}
+ul > div:nth-child(5n+2){
+    background: #C2FAFF;
+}
+ul > div:nth-child(5n+3){
+    background: #f8f8f8;
+}
+ul > div:nth-child(5n+4){
+    background: var(--bg);
+    border:1px solid var(--borderColor);
+    color:#f4f4f4;
+    padding-top:3rem;
+}
+
+ul > div:nth-child(3n){
+    width:100%;
+}
+ul > div:nth-child(3n+1){
+    width:calc(50% - 6px)
+}
+ul > div:nth-child(3n+2){
+    width:calc(50% - 6px)
+}
+
+header > div {
+  display: flex;
+  gap:.25rem;
+  align-items: center;
+}
+
+ul > div:hover {
+  background: var(--borderColor);
+}
+
+header > div:hover {
+  background: var(--bg);
+}
+
+ul div + div {
+  border-top: 1px solid var(--borderColor);
+}
+
+button {
+  display: flex;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+button#theme {
+  padding: 12px;
+  margin: 0 8px 0 0;
+  background: transparent;
+  width:48px;
+  height:48px;
+  border-radius: 24px;
+  display: grid;
+  place-content: center;
+}
+
+button#theme:hover{
+    background: var(--bgSubtle);
+}
+
+button#theme img {
+  width: 24px;
+}
+
+body.dark button#theme img {
+  filter: invert(100%);
+}
+
+button.deleteButton img {
+  width: 16px;
+  filter: invert(16%) sepia(100%) saturate(6747%) hue-rotate(2deg)
+    brightness(107%) contrast(116%);
+}

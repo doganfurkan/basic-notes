@@ -1,0 +1,12 @@
+{
+    "name": "Basic Notes",
+    "version": "1.0.0",
+    "description": "Pretty basic notes extension",
+    "manifest_version": 3,
+    "author": "Furkan Doğan",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Basic Notes"
+    },
+    "permissions": ["storage"]
+}

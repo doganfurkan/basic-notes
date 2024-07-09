@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="topbar">
+      <h1>Hi, Welcome</h1>
+      <div>
+        <button id="theme"><img src="moon.svg" alt="dark theme" /></button>
+        <button style="width: 48px;height:48px;background: #00AFF5;display: grid;place-content: center;border-radius: 50%;font-size:1.75rem;">+</button>
+      </div>
+    </header>
+    <div id="not">
+        <input type="text" placeholder="Quick Note" id="baslik" autocomplete="off" />
+      </div>
+    <div id="filters">
+      <button class="chosen">All</button>
+      <button>To Do</button>
+      <button>Quick Note</button>
+      <button>Content</button>
+    </div>
+    <ul id="list"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
