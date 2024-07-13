@@ -69,6 +69,12 @@ ul > div {
   color:#000;
   font-size:1.1rem;
   font-weight: 600;
+  position: relative;
+}
+
+ul > div > span{
+  max-width:calc(100% - 16px);
+  overflow-wrap: break-word;
 }
 
 #filters{
@@ -179,4 +185,8 @@ button.deleteButton img {
   width: 16px;
   filter: invert(16%) sepia(100%) saturate(6747%) hue-rotate(2deg)
     brightness(107%) contrast(116%);
+  position: absolute;
+  top:16px;
+  right:16px;
+  background: inherit;
 }

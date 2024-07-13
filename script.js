@@ -13,7 +13,7 @@ if(localStorage.getItem("theme") === "dark"){
 function update() {
   if (notes.length == 0) {
     document.getElementById("list").innerHTML =
-      "<div>Henüz bir notun yok</div>";
+      "<span>There is nothing here</span>";
   } else {
     document.getElementById("list").innerHTML = "";
     for (let i = 0; i < notes.length; i++) {
