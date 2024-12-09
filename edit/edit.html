@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Note</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        :root {
+            --bg: #fff;
+            --filterBtn: #000;
+            --borderColor: #ddd;
+            --bgSubtle: #f8f8f8;
+            --primary: #00AFF5;
+        }
+
+        body.dark {
+            --bg: #001219;
+            --filterBtn: #fff;
+            --borderColor: #333;
+            --bgSubtle: #031e28;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        html {
+            width: 400px;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            max-width: 600px;
+            background: var(--bg);
+            color: var(--filterBtn);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0 12px 12px;
+        }
+
+        input,
+        textarea,
+        select {
+            padding: 8px;
+            border: 1px solid var(--borderColor);
+            border-radius: 4px;
+            font-family: inherit;
+            background: var(--bg);
+            color: var(--filterBtn);
+        }
+
+        textarea {
+            min-height: 200px;
+            resize: vertical;
+        }
+
+        .tag-container {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .tag span {
+            cursor: pointer;
+        }
+
+        button#editTheme:hover,
+        button#back:hover {
+            background: var(--bgSubtle);
+            color: var(--filterBtn);
+        }
+
+        button#editTheme,
+        button#back {
+            width: 48px;
+            height: 48px;
+            background: var(--bg);
+            color: var(--filterBtn);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        button#editTheme img,
+        button#back img {
+            width: 24px;
+        }
+
+        body.dark button#editTheme img,
+        body.dark button#back img {
+            filter: invert(100%);
+        }
+
+        button#updateNote {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 35px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: inherit;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; gap: 0.5rem; justify-content: space-between; align-items: center; padding:24px">
+        <h1 style="font-size: 1.5rem; font-weight: 200;">Edit Note</h1>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <button id="editTheme">
+                <img src="../moon.svg" alt="dark theme" />
+            </button>
+            <button type="button" id="back">
+                <img src="../arrow-left.svg" alt="back" />
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <input type="text" id="title" placeholder="Note Title" autocomplete="off">
+        <div class="tag-section">
+            <div style="display: flex; gap: 0.5rem;">
+                <input type="text" id="new-tag" placeholder="Add new tag" style="flex: 1;">
+                <button id="addTag" style="padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 4px;">Add Tag</button>
+            </div>
+            <select id="tag-select" style="margin-top: 0.5rem; width: 100%;">
+                <option value="">Select Tag</option>
+            </select>
+        </div>
+
+        <div class="tag-container" id="selected-tags">
+            <!-- Selected tags will appear here -->
+        </div>
+
+        <textarea id="note-content" placeholder="Write your note here..."></textarea>
+
+        <button id="updateNote">Update Note</button>
+    </div>
+    <script src="edit.js"></script>
+  </body>
+</html>
+

@@ -1,13 +1,14 @@
 :root {
   --bg: #fff;
-  --bgSubtle:#f8f8f8;
+  --bgSubtle: #f8f8f8;
   --borderColor: #e0e0e0;
   --filterBtn: #001219;
+  --primary: #00AFF5;
 }
 
 body.dark {
   --bg: #001219;
-  --bgSubtle:#031e28;
+  --bgSubtle: #031e28;
   --borderColor: #003A52;
   --filterBtn: #f4f4f4;
   color: #f4f4f4;
@@ -21,24 +22,69 @@ body.dark {
 }
 
 html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
   width: 400px;
   height: 400px;
 }
 
 body {
+  margin: 0;
   background: var(--bg);
   overflow: auto;
   color: #272727;
   padding-bottom: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1{
-    font-weight: 200;
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: 200;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
 }
 
 input {
   padding: 12px 16px;
-  width:calc(100% - 24px);
+  width: calc(100% - 24px);
   background: transparent;
   color: inherit;
   margin: 0 12px;
@@ -49,105 +95,134 @@ input {
 header#topbar {
   display: flex;
   align-items: center;
-  padding:24px;
+  padding: 24px;
   justify-content: space-between;
 }
 
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap:12px;
-    padding:0 12px;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 1rem 12px 0;
 }
 
-ul > div {
+ul>div {
   display: flex;
   justify-content: space-between;
   padding: 16px;
   align-items: flex-start;
   border-radius: 1rem;
-  color:#000;
-  font-size:1.1rem;
+  color: #000;
+  font-size: 1.1rem;
   font-weight: 600;
   position: relative;
 }
 
-ul > div > span{
-  max-width:calc(100% - 16px);
+ul>div>span {
+  max-width: calc(100% - 16px);
   overflow-wrap: break-word;
 }
 
-#filters{
-    display: flex;
-    gap:.5rem;
-    padding: 1rem;
-}
-
-#filters button{
-    padding:5px 15px;
-    border-radius: 50px;
-    font-size:0.9rem;
-    border:1px solid var(--filterBtn);
-    color:var(--filterBtn);
-    font-weight: 400;
-}
-
-#not{
-    width:100%;
-    padding:0;
-}
-
-.chosen{
-    background: var(--filterBtn);
-    color:var(--bg) !important;
-    font-weight: 900 !important;
-}
-
-ul > div:nth-child(5n){
-    background: #FDFFB6 ;
-    color:#000
-}
-ul > div:nth-child(5n+1){
-    background: #CAFFBF;
-}
-ul > div:nth-child(5n+2){
-    background: #C2FAFF;
-}
-ul > div:nth-child(5n+3){
-    background: #f8f8f8;
-}
-ul > div:nth-child(5n+4){
-    background: var(--bg);
-    border:1px solid var(--borderColor);
-    color:#f4f4f4;
-    padding-top:3rem;
-}
-
-ul > div:nth-child(3n){
-    width:100%;
-}
-ul > div:nth-child(3n+1){
-    width:calc(50% - 6px)
-}
-ul > div:nth-child(3n+2){
-    width:calc(50% - 6px)
-}
-
-header > div {
+#filters {
   display: flex;
-  gap:.25rem;
+  gap: .5rem;
+  padding: 1rem 1rem 0;
+  overflow-x: auto;
+}
+
+#filters::-webkit-scrollbar {
+  display: none;
+}
+
+#filters button,
+#filters span {
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  border: 1px solid var(--filterBtn);
+  color: var(--filterBtn);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+#filters span button{
+  display: none;
+}
+
+#not {
+  width: 100%;
+  padding: 0;
+}
+
+.chosen {
+  background: var(--filterBtn);
+  color: var(--bg) !important;
+  font-weight: 900 !important;
+}
+
+span.chosen button{
+  display: flex !important;
+  background: transparent !important;
+  border: 0 !important;
+  cursor: pointer !important;
+  color: var(--bg) !important;
+  padding: 0 !important;
+}
+
+ul>div:nth-child(5n) {
+  background: #FDFFB6;
+  color: #000
+}
+
+ul>div:nth-child(5n+1) {
+  background: #CAFFBF;
+}
+
+ul>div:nth-child(5n+2) {
+  background: #C2FAFF;
+}
+
+ul>div:nth-child(5n+3) {
+  background: #f8f8f8;
+}
+
+ul>div:nth-child(5n+4) {
+  background: var(--bg);
+  border: 1px solid var(--borderColor);
+  color: var(--filterBtn);
+  padding-top: 3rem;
+}
+
+ul>div:nth-child(3n) {
+  width: 100%;
+}
+
+ul>div:nth-child(3n+1) {
+  width: calc(50% - 6px)
+}
+
+ul>div:nth-child(3n+2) {
+  width: calc(50% - 6px)
+}
+
+header>div {
+  display: flex;
+  gap: .25rem;
   align-items: center;
 }
 
-ul > div:hover {
+ul>div:hover {
   background: var(--borderColor);
+  color: var(--filterBtn);
 }
 
-header > div:hover {
+header>div:hover {
   background: var(--bg);
 }
 
-ul div + div {
+ul div+div {
   border-top: 1px solid var(--borderColor);
 }
 
@@ -162,15 +237,15 @@ button#theme {
   padding: 12px;
   margin: 0 8px 0 0;
   background: transparent;
-  width:48px;
-  height:48px;
+  width: 48px;
+  height: 48px;
   border-radius: 24px;
   display: grid;
   place-content: center;
 }
 
-button#theme:hover{
-    background: var(--bgSubtle);
+button#theme:hover {
+  background: var(--bgSubtle);
 }
 
 button#theme img {
@@ -181,12 +256,25 @@ body.dark button#theme img {
   filter: invert(100%);
 }
 
+#addNote {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-size: 1.75rem;
+}
+
 button.deleteButton img {
   width: 16px;
-  filter: invert(16%) sepia(100%) saturate(6747%) hue-rotate(2deg)
-    brightness(107%) contrast(116%);
+  filter: invert(50%);
   position: absolute;
-  top:16px;
-  right:16px;
+  top: 16px;
+  right: 16px;
   background: inherit;
+}
+
+button.deleteButton:hover img {
+  filter: invert(16%) sepia(100%) saturate(6747%) hue-rotate(2deg) brightness(107%) contrast(116%);
 }
