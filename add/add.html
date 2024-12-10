@@ -16,7 +16,7 @@
             --bg: #fff;
             --filterBtn: #000;
             --borderColor: #ddd;
-            --bgSubtle: #f8f8f8;
+            --bgSubtle: #f4f4f4;
             --primary: #00AFF5;
         }
 
@@ -24,7 +24,7 @@
             --bg: #001219;
             --filterBtn: #fff;
             --borderColor: #333;
-            --bgSubtle: #031e28;
+            --bgSubtle: #0a5976;
         }
 
         * {
@@ -136,6 +136,18 @@
             gap: 0.5rem;
             justify-content: center;
         }
+
+        button#saveNote:hover{
+            background: hsl(197, 100%, 40%);
+        }
+
+        button#addTag{
+            padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 4px; cursor: pointer;
+        }
+
+        button#addTag:hover{
+            background: hsl(197, 100%, 40%);
+        }
     </style>
 </head>
 
@@ -158,7 +170,7 @@
         <div class="tag-section">
             <div style="display: flex; gap: 0.5rem;">
                 <input type="text" id="new-tag" placeholder="Add new tag" style="flex: 1;">
-                <button id="addTag" style="padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 4px;">Add Tag</button>
+                <button id="addTag">Add Tag</button>
             </div>
             <select id="tag-select" style="margin-top: 0.5rem; width: 100%;">
                 <option value="">Select Tag</option>
