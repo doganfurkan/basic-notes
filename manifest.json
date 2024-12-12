@@ -1,7 +1,7 @@
 {
     "name": "Basic Notes",
     "version": "1.0.0",
-    "description": "Pretty basic notes extension",
+    "description": "Take quick notes from your browser. Use tags to organize your notes. No need to login or sign up.",
     "manifest_version": 3,
     "author": "Furkan Doğan",
     "action":{
