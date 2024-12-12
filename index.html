@@ -24,7 +24,17 @@
         <input type="text" placeholder="Quick Note" id="baslik" autocomplete="off" />
       </div>
     <div id="filters">
-      <span id="all" class="chosen">All</span>
+      <button id="sort">
+        <img src="/sort-ascending.svg" alt="Sort" class="sort-ascending">
+        <img src="/sort-descending.svg" alt="Sort" class="sort-descending">
+        <span>Oldest First</span>
+      </button>
+      <div id="filters-shadow">
+        <div id="filters-container">
+          <span id="all" class="chosen">All</span>
+          <span id="quick">Quick Note</span>
+        </div>
+      </div>
     </div>
     <ul id="list"></ul>
     <script src="./script.js"></script>

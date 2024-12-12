@@ -125,17 +125,51 @@ ul>div>span {
 
 #filters {
   display: flex;
+  align-items: center;
   gap: .5rem;
-  padding: 1rem 1rem 0;
-  overflow-x: auto;
+  padding: 1rem 0 0 1rem;
+  width: 100%;
 }
 
-#filters::-webkit-scrollbar {
+#filters-container {
+  display: flex;
+  gap: .5rem;
+  overflow-x: auto;
+  padding: 0 1rem;
+}
+
+#filters-shadow {
+  width: auto;
+  flex-shrink: 1;
+  min-width: 0;
+  position: relative;
+}
+
+#filters-shadow::before,
+#filters-shadow::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  width: 1rem;
+}
+
+#filters-shadow::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg), transparent);
+}
+
+#filters-shadow::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg), transparent);
+}
+
+#filters-container::-webkit-scrollbar {
   display: none;
 }
 
-#filters button,
-#filters span {
+#filters-container>span {
   padding: 5px 15px;
   border-radius: 50px;
   font-size: 0.9rem;
@@ -145,10 +179,58 @@ ul>div>span {
   display: flex;
   align-items: center;
   gap: .5rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#filters>button{
+  padding: 5px 0;
+  font-size: 0.9rem;
+  border:0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--filterBtn);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 #filters span button{
   display: none;
+}
+
+#sort span{
+  font-size: 0.9rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+#sort{
+  flex-shrink: 0;
+}
+
+#sort img{
+  width: 16px;
+}
+
+#sort img.sort-ascending{
+  display: block;
+}
+
+#sort img.sort-descending{
+  display: none;
+}
+
+#sort.ters img.sort-ascending{
+  display: none;
+}
+
+#sort.ters img.sort-descending{
+  display: block;
+}
+
+body.dark #sort img{
+  filter: invert(100%);
 }
 
 #not {
