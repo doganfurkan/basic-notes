@@ -148,12 +148,15 @@ document.getElementById("updateNote").addEventListener("click", () => {
     const content = document.getElementById('note-content').value;
     const tagElements = document.querySelectorAll('.tag');
     const tags = Array.from(tagElements).map(tag => tag.textContent.replace('×', '').trim());
+    const timestamp = note.timestamp;
 
     if (title && content) {
         notes[noteId] = {
             title,
             content,
-            tags
+            tags,
+            updated: new Date().toISOString(),
+            timestamp: timestamp
         };
         
         localStorage.setItem('notes', JSON.stringify(notes));

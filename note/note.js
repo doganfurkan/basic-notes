@@ -74,6 +74,23 @@ function deleteNote(a) {
     notes.splice(a, 1);
     console.log(`Note number ${a} is deleted`);
     localStorage.setItem("notes", JSON.stringify(notes));
-    update();
+    window.location.href = "../index.html";
   }
 }
+
+if(note.timestamp){
+  const date = new Date(note.timestamp);
+  document.getElementById("note-created").innerHTML = `Created: ${date.toLocaleString(undefined, {
+    dateStyle: 'medium',
+    timeStyle: 'short'
+  })}`;
+}
+
+if(note.updated){
+  const date = new Date(note.updated);
+  document.getElementById("note-updated").innerHTML = `Updated: ${date.toLocaleString(undefined, {
+    dateStyle: 'medium',
+    timeStyle: 'short'
+  })}`;
+}
+
