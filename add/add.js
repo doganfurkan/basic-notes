@@ -1,6 +1,7 @@
 // Theme switching functionality
 document.getElementById("addTheme").addEventListener("click", changeTheme);
 document.getElementById("saveNote").addEventListener("click", saveNote);
+const sorting = localStorage.getItem("sorting");
 
 // Initialize theme from localStorage
 if (localStorage.getItem("theme") === "dark") {
@@ -64,7 +65,11 @@ function saveNote() {
         : [];
 
     // Add new note
-    notes.push(note);
+    if(sorting == "true"){
+        notes.push(note);
+    }else{
+        notes.unshift(note);
+    }
 
     // Save back to localStorage
     localStorage.setItem("notes", JSON.stringify(notes));
