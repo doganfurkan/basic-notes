@@ -1,25 +1,42 @@
-# Basic Notes - Browser Extension
+# Basic Notes
 
-A simple and lightweight browser extension for quick note-taking. Keep your thoughts organized with this easy-to-use notes manager.
+A lightweight browser extension for quick and efficient note-taking, built with vanilla JavaScript. Basic Notes offers a clean, distraction-free interface for managing your thoughts without requiring any sign-up or external services.
 
-## Features
+## Key Features
 
-- Create and edit notes with titles
-- Add tags to organize your notes
-- Dark/light theme support
-- Simple and clean interface
-- Filter notes by tags
+- 📝 Quick notes with a single keystroke
+- 🏷️ Organize notes with customizable tags  
+- 🔍 Filter and search notes by tags
+- 🌓 Dark/light theme support
+- 🔗 Automatic URL detection and link formatting
+- ⏱️ Timestamp tracking for creation and updates
+- 📱 Responsive and clean interface
+- 💾 Local storage for privacy and offline access
+
+## Privacy First
+
+All notes are stored locally in your browser - no external servers, no tracking, and no sign-up required. Your data stays with you.
+
+Perfect for students, developers, or anyone who needs a quick and organized way to jot down notes while browsing.
 
 ## Installation
 
 1. Download or clone this repository
 2. Open your browser's extension management page:
    - Chrome: Navigate to `chrome://extensions/`
-   - Firefox: Navigate to `about:addons`
    - Edge: Navigate to `edge://extensions/`
+   - Opera: Navigate to `opera://extensions/`
 3. Enable "Developer mode"
 4. Click "Load unpacked extension"
 5. Select the downloaded/cloned folder
+
+### For Firefox
+
+It is not supported yet.
+
+### For Safari
+
+I don't own a Mac, so I can't test it. If you have one, please let me know if it works.
 
 ## Usage
 
@@ -34,3 +51,4 @@ A simple and lightweight browser extension for quick note-taking. Keep your thou
 ![Extension Screenshot](assets/ss_dark.png)
 ![Extension Screenshot](assets/ss_light.png)
 
+[View Screenshots](#) | [Installation Guide](#installation) | [Report Bug](https://github.com/yourusername/basic-notes/issues)
