@@ -90,7 +90,20 @@ function filterNotes(tag) {
       filteredNotes.forEach((note, index) => {
         let s = document.createElement("div");
         const noteIndex = notes.indexOf(note);
-        s.innerHTML = `<span>${note.title ? note.title : note.content}</span><button class="deleteButton" dataId="${noteIndex}"><img src="trash-simple-fill.svg"/></button>`;
+        let span = document.createElement("span");
+        span.textContent = note.title ? note.title : note.content;
+
+        let button = document.createElement("button");
+        button.className = "deleteButton";
+        button.setAttribute("dataId", noteIndex);
+
+        let img = document.createElement("img");
+        img.src = "trash-simple-fill.svg";
+
+        button.appendChild(img);
+        s.appendChild(span);
+        s.appendChild(button);
+
         if (typeof note === 'object') {
           s.querySelector('span').style.cursor = 'pointer';
           s.querySelector('span').addEventListener('click', () => {
@@ -134,7 +147,16 @@ function update() {
     for (let i = 0; i < notes.length; i++) {
       let noteText = typeof notes[i] === 'string' ? notes[i] : notes[i].title ? notes[i].title : notes[i].content;
       let s = document.createElement("div");
-      s.innerHTML = `<span>${noteText}</span><button class="deleteButton" dataId="${i}"><img src="trash-simple-fill.svg"/></button>`;
+      const span = document.createElement('span');
+      span.textContent = noteText;
+      const button = document.createElement('button');
+      button.className = 'deleteButton';
+      button.setAttribute('dataId', i);
+      const img = document.createElement('img');
+      img.src = 'trash-simple-fill.svg';
+      button.appendChild(img);
+      s.appendChild(span);
+      s.appendChild(button);
       if (typeof notes[i] === 'object') {
         s.querySelector('span').style.cursor = 'pointer';
         s.querySelector('span').addEventListener('click', () => {

@@ -16,10 +16,39 @@ if (note) {
   const hasUrl = urlRegex.test(contentText);
 
   if (hasUrl) {
-    // Replace URLs with text + link icon
-    content.innerHTML = contentText.replace(urlRegex, url => 
-      `${url} <a href="${url}" target="_blank" rel="noopener noreferrer">Open Link <img src="../link-simple.svg" alt="link" style="width: 16px; vertical-align: middle;"></a>`
-    );
+    // Create text and link elements instead of using innerHTML
+    const parts = contentText.split(urlRegex);
+    const matches = contentText.match(urlRegex) || [];
+    
+    content.textContent = ''; // Clear existing content
+    
+    parts.forEach((part, index) => {
+      // Add text part
+      content.appendChild(document.createTextNode(part));
+      
+      // Add link if there is a URL match
+      if (index < matches.length) {
+        const url = matches[index];
+        const linkContainer = document.createElement('span');
+        linkContainer.textContent = ' ';
+        
+        const link = document.createElement('a');
+        link.href = url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.textContent = 'Open Link ';
+        
+        const img = document.createElement('img');
+        img.src = '../link-simple.svg';
+        img.alt = 'link';
+        img.style.width = '16px';
+        img.style.verticalAlign = 'middle';
+        
+        link.appendChild(img);
+        linkContainer.appendChild(link);
+        content.appendChild(linkContainer);
+      }
+    });
   } else {
     content.textContent = contentText;
   }
@@ -80,7 +109,8 @@ function deleteNote(a) {
 
 if(note.timestamp){
   const date = new Date(note.timestamp);
-  document.getElementById("note-created").innerHTML = `Created: ${date.toLocaleString(undefined, {
+  const timestampElement = document.getElementById("note-created");
+  timestampElement.textContent = `Created: ${date.toLocaleString(undefined, {
     dateStyle: 'medium',
     timeStyle: 'short'
   })}`;
@@ -88,9 +118,9 @@ if(note.timestamp){
 
 if(note.updated){
   const date = new Date(note.updated);
-  document.getElementById("note-updated").innerHTML = `Updated: ${date.toLocaleString(undefined, {
+  const updatedElement = document.getElementById("note-updated");
+  updatedElement.textContent = `Updated: ${date.toLocaleString(undefined, {
     dateStyle: 'medium',
     timeStyle: 'short'
   })}`;
 }
-

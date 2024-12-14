@@ -4,9 +4,16 @@
     "description": "Take quick notes from your browser. Use tags to organize your notes. No need to login or sign up.",
     "manifest_version": 3,
     "author": "Furkan Doğan",
-    "action":{
+    "action": {
         "default_popup": "index.html",
         "default_title": "Basic Notes"
     },
-    "permissions": ["storage"]
+    "permissions": [
+        "storage"
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "1furkandogan1@gmail.com"
+        }
+    }
 }
