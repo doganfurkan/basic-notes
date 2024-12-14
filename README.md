@@ -48,7 +48,9 @@ I don't own a Mac, so I can't test it. If you have one, please let me know if it
 6. Toggle between dark/light themes with the theme button
 7. Or quickly add a new note and edit it later
 
+## Screenshots
+
 ![Extension Screenshot](assets/ss_dark.png)
 ![Extension Screenshot](assets/ss_light.png)
 
-[View Screenshots](#) | [Installation Guide](#installation) | [Report Bug](https://github.com/yourusername/basic-notes/issues)
+[View Screenshots](#screenshots) | [Installation Guide](#installation) | [Report Bug](https://github.com/doganfurkan/basic-notes/issues)
