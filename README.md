@@ -31,4 +31,6 @@ A simple and lightweight browser extension for quick note-taking. Keep your thou
 6. Toggle between dark/light themes with the theme button
 7. Or quickly add a new note and edit it later
 
-![Extension Screenshot](https://github.com/doganfurkan/basic-notes/assets/33427049/59afe8fa-59a1-4448-93bb-e01da8a398f3)
+![Extension Screenshot](assets/ss_dark.png)
+![Extension Screenshot](assets/ss_light.png)
+
