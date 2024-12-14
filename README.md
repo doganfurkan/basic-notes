@@ -13,6 +13,8 @@ A lightweight browser extension for quick and efficient note-taking, built with 
 - 📱 Responsive and clean interface
 - 💾 Local storage for privacy and offline access
 
+![Extension Banner](assets/banner.png)
+
 ## Privacy First
 
 All notes are stored locally in your browser - no external servers, no tracking, and no sign-up required. Your data stays with you.
@@ -32,11 +34,11 @@ Perfect for students, developers, or anyone who needs a quick and organized way 
 
 ### For Firefox
 
-It is not supported yet.
+Coming soon to Firefox Add-ons Store.
 
 ### For Safari
 
-I don't own a Mac, so I can't test it. If you have one, please let me know if it works.
+I don't have a Mac, so I can't test it. If you have one, please let me know if it works.
 
 ## Usage
 
