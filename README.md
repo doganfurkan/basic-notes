@@ -34,7 +34,7 @@ Perfect for students, developers, or anyone who needs a quick and organized way 
 
 ### For Firefox
 
-Coming soon to Firefox Add-ons Store.
+Download the extension from [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/basic-notes/).
 
 ### For Safari
 
