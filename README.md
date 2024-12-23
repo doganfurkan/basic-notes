@@ -23,6 +23,20 @@ Perfect for students, developers, or anyone who needs a quick and organized way 
 
 ## Installation
 
+### For Firefox
+
+Download the extension from [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/basic-notes/).
+
+### For Edge
+
+Download the extension from [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/basic-notes/hkgbnmdgcemifeemcohcnadepdgeobkl)
+
+### For Safari
+
+I don't have a Mac, so I can't test it. If you have one, please let me know if it works.
+
+### Installian through developer mode
+
 1. Download or clone this repository
 2. Open your browser's extension management page:
    - Chrome: Navigate to `chrome://extensions/`
@@ -31,14 +45,6 @@ Perfect for students, developers, or anyone who needs a quick and organized way 
 3. Enable "Developer mode"
 4. Click "Load unpacked extension"
 5. Select the downloaded/cloned folder
-
-### For Firefox
-
-Download the extension from [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/basic-notes/).
-
-### For Safari
-
-I don't have a Mac, so I can't test it. If you have one, please let me know if it works.
 
 ## Usage
 
