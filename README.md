@@ -35,7 +35,7 @@ Download the extension from [Edge Add-ons](https://microsoftedge.microsoft.com/a
 
 I don't have a Mac, so I can't test it. If you have one, please let me know if it works.
 
-### Installian through developer mode
+### Installation through developer mode
 
 1. Download or clone this repository
 2. Open your browser's extension management page:
