@@ -27,6 +27,10 @@ Perfect for students, developers, or anyone who needs a quick and organized way 
 
 Download the extension from [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/basic-notes/).
 
+### For Opera
+
+Download the extension from [Opera AddOns Store](https://addons.opera.com/tr/extensions/details/basic-notes/)
+
 ### For Edge
 
 Download the extension from [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/basic-notes/hkgbnmdgcemifeemcohcnadepdgeobkl)
