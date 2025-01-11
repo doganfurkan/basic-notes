@@ -317,7 +317,8 @@ button {
   cursor: pointer;
 }
 
-button#theme {
+button#theme,
+a#info {
   padding: 12px;
   margin: 0 8px 0 0;
   background: transparent;
@@ -328,15 +329,18 @@ button#theme {
   place-content: center;
 }
 
-button#theme:hover {
+button#theme:hover,
+a#info:hover {
   background: var(--bgSubtle);
 }
 
-button#theme img {
+button#theme img,
+a#info img {
   width: 24px;
 }
 
-body.dark button#theme img {
+body.dark button#theme img,
+body.dark a#info img {
   filter: invert(100%);
 }
 
