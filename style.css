@@ -84,231 +84,22 @@ input {
   appearance: button;
 }
 
-input {
-  padding: 12px 16px;
-  width: calc(100% - 24px);
-  background: transparent;
-  color: inherit;
-  margin: 0 12px;
-  border-radius: 24px;
-  border: 1px solid var(--borderColor);
-}
-
-header#topbar {
+header {
   display: flex;
   align-items: center;
-  padding: 24px;
+  padding: 20px 24px;
   justify-content: space-between;
 }
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding: 1rem 12px 0;
-}
-
-ul>div {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-  align-items: flex-start;
-  border-radius: 1rem;
-  color: #000;
-  font-size: 1.1rem;
-  font-weight: 600;
-  position: relative;
-}
-
-ul>div>span {
-  max-width: calc(100% - 16px);
-  overflow-wrap: break-word;
-}
-
-#filters {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  padding: 1rem 0 0 1rem;
-  width: 100%;
-}
-
-#filters-container {
-  display: flex;
-  gap: .5rem;
-  overflow-x: auto;
-  padding: 0 1rem;
-}
-
-#filters-shadow {
-  width: auto;
-  flex-shrink: 1;
-  min-width: 0;
-  position: relative;
-}
-
-#filters-shadow::before,
-#filters-shadow::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  width: 1rem;
-}
-
-#filters-shadow::before {
-  left: 0;
-  background: linear-gradient(to right, var(--bg), transparent);
-}
-
-#filters-shadow::after {
-  right: 0;
-  background: linear-gradient(to left, var(--bg), transparent);
-}
-
-#filters-container::-webkit-scrollbar {
-  display: none;
-}
-
-#filters-container>span {
-  padding: 5px 15px;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  border: 1px solid var(--filterBtn);
-  color: var(--filterBtn);
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-#filters>button{
-  padding: 5px 0;
-  font-size: 0.9rem;
-  border:0;
-  background: transparent;
-  cursor: pointer;
-  color: var(--filterBtn);
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-}
-
-#filters span button{
-  display: none;
-}
-
-#sort span{
-  font-size: 0.9rem;
-  font-weight: 400;
-  white-space: nowrap;
-}
-
-#sort{
-  flex-shrink: 0;
-}
-
-#sort img{
-  width: 16px;
-}
-
-#sort img.sort-ascending{
-  display: block;
-}
-
-#sort img.sort-descending{
-  display: none;
-}
-
-#sort.ters img.sort-ascending{
-  display: none;
-}
-
-#sort.ters img.sort-descending{
-  display: block;
-}
-
-body.dark #sort img{
-  filter: invert(100%);
-}
-
-#not {
-  width: 100%;
-  padding: 0;
-}
-
-.chosen {
-  background: var(--filterBtn);
-  color: var(--bg) !important;
-  font-weight: 900 !important;
-}
-
-span.chosen button{
-  display: flex !important;
-  background: transparent !important;
-  border: 0 !important;
-  cursor: pointer !important;
-  color: var(--bg) !important;
-  padding: 0 !important;
-}
-
-ul>div:nth-child(5n) {
-  background: #FDFFB6;
-  color: #000
-}
-
-ul>div:nth-child(5n+1) {
-  background: #CAFFBF;
-}
-
-ul>div:nth-child(5n+2) {
-  background: #C2FAFF;
-}
-
-ul>div:nth-child(5n+3) {
-  background: #f8f8f8;
-}
-
-ul>div:nth-child(5n+4) {
-  background: var(--bg);
-  border: 1px solid var(--borderColor);
-  color: var(--filterBtn);
-  padding-top: 3rem;
-}
-
-ul>div:nth-child(3n) {
-  width: 100%;
-}
-
-ul>div:nth-child(3n+1) {
-  width: calc(50% - 6px)
-}
-
-ul>div:nth-child(3n+2) {
-  width: calc(50% - 6px)
-}
-
-header>div {
+header>nav {
   display: flex;
   gap: .25rem;
   align-items: center;
   padding: 5px 0;
 }
 
-ul>div:hover {
-  background: var(--borderColor);
-  color: var(--filterBtn);
-}
-
-header>div:hover {
+header>nav:hover {
   background: var(--bg);
-}
-
-ul div+div {
-  border-top: 1px solid var(--borderColor);
 }
 
 button {
@@ -318,10 +109,9 @@ button {
   cursor: pointer;
 }
 
-button#theme,
-a#info {
+header>nav>button,
+header>nav>a {
   padding: 12px;
-  margin: 0 8px 0 0;
   background: transparent;
   width: 48px;
   height: 48px;
@@ -330,18 +120,18 @@ a#info {
   place-content: center;
 }
 
-button#theme:hover,
-a#info:hover {
+header>nav>button:hover,
+header>nav>a:hover {
   background: var(--bgSubtle);
 }
 
-button#theme img,
-a#info img {
+header>nav>button img,
+header>nav>a img {
   width: 24px;
 }
 
-body.dark button#theme img,
-body.dark a#info img {
+body.dark header>nav>button>img,
+body.dark header>nav>a>img {
   filter: invert(100%);
 }
 
@@ -360,15 +150,33 @@ body.dark a#info img {
   background: hsl(197, 100%, 40%);
 }
 
-button.deleteButton img {
-  width: 16px;
-  filter: invert(50%);
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: inherit;
+input,
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    font-family: inherit;
+    background: var(--bg);
+    color: var(--filterBtn);
 }
 
-button.deleteButton:hover img {
-  filter: invert(16%) sepia(100%) saturate(6747%) hue-rotate(2deg) brightness(107%) contrast(116%);
+textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.tag {
+  background: var(--primary);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tag span {
+  cursor: pointer;
 }

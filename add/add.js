@@ -1,12 +1,5 @@
-// Theme switching functionality
-document.getElementById("addTheme").addEventListener("click", changeTheme);
 document.getElementById("saveNote").addEventListener("click", saveNote);
 const sorting = localStorage.getItem("sorting");
-
-// Initialize theme from localStorage
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-}
 
 // Load existing tags from localStorage
 let existingTags = [];
@@ -21,19 +14,6 @@ if (localStorage.getItem("tags")) {
     });
 }
 
-
-function changeTheme() {
-    let thm;
-    document.body.classList.toggle("dark");
-    if (localStorage.getItem("theme") === "dark") {
-        thm = "light";
-    } else if (localStorage.getItem("theme") === "light") {
-        thm = "dark";
-    } else {
-        thm = "light";
-    }
-    localStorage.setItem("theme", thm);
-}
 
 // Generate unique ID
 function generateUniqueId() {

@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding:0 12px 12px;
+}
+
+.tag-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: #00AFF5;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+button#saveNote {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+button#saveNote:hover{
+    background: hsl(197, 100%, 40%);
+}
+
+button#addTag{
+    padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 4px; cursor: pointer;
+}
+
+button#addTag:hover{
+    background: hsl(197, 100%, 40%);
+}
+
+.tagInputContainer{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tagInputContainer input{
+    flex:1;
+}

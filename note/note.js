@@ -51,32 +51,6 @@ if (note) {
   }
 }
 
-// Apply theme if dark mode is enabled
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-}
-
-document.getElementById("back").addEventListener("click", () => {
-  window.location.href = "../index.html";
-});
-
-document.getElementById("noteTheme").addEventListener("click", () => {
-  changeTheme();
-});
-
-function changeTheme(){
-    let thm;
-    document.body.classList.toggle("dark");
-    if(localStorage.getItem("theme") === "dark"){
-        thm = "light"
-    } else if(localStorage.getItem("theme") === "light"){
-        thm = "dark"
-    } else{
-        thm = "light"
-    }
-    localStorage.setItem("theme", thm)
-}
-
 document.getElementById("editNote").addEventListener("click", () => {
   window.location.href = "../edit/edit.html?id=" + noteId;
 });

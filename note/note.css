@@ -1,112 +1,92 @@
 .note-container {
-    padding: 0 1.5rem;
-}
-
-.note-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  padding: 0 1.5rem;
 }
 
 .note-content {
-    line-height: 1.5;
-    font-size: 1rem;
-    font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .note-content a {
-    text-decoration: none;
-    color: var(--primary);
-    margin-left: 0.5rem;
-    display: inline-flex;
-    align-items: center;
-    padding: 0.25rem 0.5rem;
-    border-radius: 1rem;
-    border: 1px solid var(--borderColor);
-    font-size: 0.8rem;
-    gap: 0.25rem;
+  text-decoration: none;
+  color: var(--primary);
+  margin-left: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--borderColor);
+  font-size: 0.8rem;
+  gap: 0.25rem;
 }
 
 .note-content a:hover {
-    background: var(--bgSubtle);
-    color: var(--filterBtn);
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  background: var(--bgSubtle);
+  color: var(--filterBtn);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 body.dark .note-content a:hover {
-    box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
 }
 
 .note-content a img {
-    width: 16px;
-    vertical-align: middle;
+  width: 16px;
+  vertical-align: middle;
 }
 
 body.dark .note-content a img {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 .note-tags {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-}
-
-.tag {
-    background: var(--primary);
-    color: white;
-    padding: 4px 12px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-}
-
-.back-button {
-    padding: 8px 16px;
-    background: var(--bg);
-    border: 1px solid var(--borderColor);
-    border-radius: 4px;
-    color: var(--filterBtn);
-    margin: 1rem;
-}
-
-button#noteTheme:hover,
-button#back:hover {
-    background: var(--bgSubtle);
-    color: var(--filterBtn);
-}
-
-button#noteTheme,
-button#back {
-    width: 48px;
-    height: 48px;
-    background: var(--bg);
-    color: var(--filterBtn);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    justify-content: center;
-    border-radius: 50px;
-}
-
-button#noteTheme img,
-button#back img {
-    width: 24px;
-}
-
-body.dark button#noteTheme img,
-body.dark button#back img {
-    filter: invert(100%);
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 #note-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+#editNote {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#deleteNote {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#note-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 24px;
 }

@@ -11,39 +11,63 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="info.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div
-      style="
-        display: flex;
-        gap: 0.5rem;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 24px;
-      "
-    >
-      <h1
-        id="title"
-        style="
-          font-size: 1.5rem;
-          font-weight: 200;
-          line-height: 1.75rem;
-          margin: 0.625em 0;
-        "
-      ></h1>
-      <div
-        style="display: flex; gap: 0.5rem; align-items: center; padding: 5px 0"
-      >
-        <button id="noteTheme">
+    <header>
+      <h1>About</h1>
+      <nav>
+        <button id="theme">
           <img src="../moon.svg" alt="dark theme" />
         </button>
         <a href="../index.html" style="text-decoration: none">
-          <button type="button" id="back">
-            <img src="../arrow-left.svg" alt="back" />
-          </button>
+          <img src="../arrow-left.svg" alt="back" />
         </a>
+      </nav>
+    </header>
+    <main>
+      <div class="collapseGroup">
+        <details open>
+          <summary>What is this extension?</summary>
+          <p>
+            Basic Notes is an extension that allows you to take notes on your
+            browser. It is a simple and easy-to-use extension that allows you to
+            take notes on the go. It is meant to be lightweight and privacy
+            focused.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Do you have an issue or do you want to suggest an improvement?
+          </summary>
+          <p>
+            You can share the issues or the developments that you want to see
+            from this link:
+            <a
+              href="https://github.com/doganfurkan/basic-notes/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/doganfurkan/basic-notes/issues
+            </a>
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you want to reach the developer?</summary>
+          <p>
+            You can reach the developer at the following email address:
+            <a href="mailto:devfurk@gmail.com" target="_blank">
+              devfurk@gmail.com
+            </a> <button id="copyEmail">Copy the Address</button>
+          </p>
+        </details>
       </div>
-    </div>
+      <center>Basic Notes <span id="version"></span></center>
+    </main>
+    <script src="../theme.js"></script>
+    <script src="about.js"></script>
   </body>
 </html>
