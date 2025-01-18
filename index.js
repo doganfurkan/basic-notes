@@ -22,7 +22,7 @@ function update() {
         button.className = 'deleteButton';
         button.setAttribute('dataId', i);
         const img = document.createElement('img');
-        img.src = 'trash-simple-fill.svg';
+        img.src = 'images/trash-simple-fill.svg';
         button.appendChild(img);
         s.appendChild(span);
         s.appendChild(button);
@@ -140,7 +140,7 @@ function update() {
           button.setAttribute("dataId", noteIndex);
   
           let img = document.createElement("img");
-          img.src = "trash-simple-fill.svg";
+          img.src = "images/trash-simple-fill.svg";
   
           button.appendChild(img);
           s.appendChild(span);

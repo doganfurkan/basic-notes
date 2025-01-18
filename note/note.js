@@ -28,7 +28,7 @@ if (note) {
       link.textContent = linkText;
           
       const img = document.createElement('img');
-      img.src = '../link-simple.svg';
+      img.src = '../images/link-simple.svg';
       img.alt = 'link';
       img.style.width = '16px';
       img.style.verticalAlign = 'middle';

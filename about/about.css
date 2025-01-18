@@ -31,7 +31,7 @@ summary::after {
   content: "";
   width: 14px;
   height: 14px;
-  background: url("../caret-down.svg")
+  background: url("../images/caret-down.svg")
     no-repeat;
   background-size: cover;
   transition: 0.2s;
