@@ -11,22 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="note.css">
+    <link rel="stylesheet" href="note.css" />
   </head>
   <body>
-    <div style="display: flex; gap: 0.5rem; justify-content: space-between; align-items: flex-start; padding:24px">
-        <h1 id="title" style="font-size: 1.5rem; font-weight: 200; line-height: 1.75rem; margin: .625em 0;"></h1>
-        <div style="display: flex; gap: 0.5rem; align-items: center; padding: 5px 0;">
-            <button id="noteTheme">
-                <img src="../moon.svg" alt="dark theme" />
-            </button>
-            <a href="../index.html" style="text-decoration: none;">
-                <button type="button" id="back">
-                    <img src="../arrow-left.svg" alt="back" />
-                </button>
-            </a>
-        </div>
-    </div>
+    <header>
+      <h1 id="title"></h1>
+      <nav>
+        <button id="theme">
+          <img src="../images/moon.svg" alt="dark theme" />
+        </button>
+        <a href="../index.html">
+          <img src="../images/arrow-left.svg" alt="back" />
+        </a>
+      </nav>
+    </header>
     <div class="note-container">
       <div class="note-content" id="content"></div>
       <div class="note-tags" id="tags"></div>
@@ -37,15 +35,12 @@
       <div id="note-updated"></div>
     </div>
 
-    <div style="display: flex; gap: 0.5rem; justify-content: center; padding: 24px">
-        <button id="editNote" style="background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 35px; cursor: pointer; font-weight: 600; font-family: inherit; display: flex; align-items: center; gap: 0.5rem;">
-            Edit Note
-        </button>
-        <button id="deleteNote" style="background: #dc3545; color: white; border: none; padding: 10px 20px; border-radius: 35px; cursor: pointer; font-weight: 600; font-family: inherit; display: flex; align-items: center; gap: 0.5rem;">
-            Delete Note
-        </button>
+    <div id="note-actions">
+      <button id="editNote">Edit Note</button>
+      <button id="deleteNote">Delete Note</button>
     </div>
 
     <script src="note.js"></script>
+    <script src="../theme.js"></script>
   </body>
 </html>

@@ -28,7 +28,7 @@ if (note) {
       link.textContent = linkText;
           
       const img = document.createElement('img');
-      img.src = '../link-simple.svg';
+      img.src = '../images/link-simple.svg';
       img.alt = 'link';
       img.style.width = '16px';
       img.style.verticalAlign = 'middle';
@@ -49,32 +49,6 @@ if (note) {
       tagsContainer.appendChild(tagElement);
     });
   }
-}
-
-// Apply theme if dark mode is enabled
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-}
-
-document.getElementById("back").addEventListener("click", () => {
-  window.location.href = "../index.html";
-});
-
-document.getElementById("noteTheme").addEventListener("click", () => {
-  changeTheme();
-});
-
-function changeTheme(){
-    let thm;
-    document.body.classList.toggle("dark");
-    if(localStorage.getItem("theme") === "dark"){
-        thm = "light"
-    } else if(localStorage.getItem("theme") === "light"){
-        thm = "dark"
-    } else{
-        thm = "light"
-    }
-    localStorage.setItem("theme", thm)
 }
 
 document.getElementById("editNote").addEventListener("click", () => {

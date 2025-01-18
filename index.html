@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Basic Notes</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,23 +11,31 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
     <header id="topbar">
       <h1>Hi, Welcome</h1>
-      <div>
-        <a id="about" href="./about/about.html"><img src="./info.svg" alt="information"></a>
-        <button id="theme"><img src="./moon.svg" alt="dark theme" /></button>
+      <nav>
+        <a id="about" href="./about/about.html">
+          <img src="./images/info.svg" alt="information" />
+        </a>
+        <button id="theme"><img src="./images/moon.svg" alt="dark theme" /></button>
         <a id="addNote" href="./add/add.html">+</a>
-      </div>
+      </nav>
     </header>
     <div id="not">
-        <input type="text" placeholder="Quick Note" id="baslik" autocomplete="off" />
-      </div>
+      <input
+        type="text"
+        placeholder="Quick Note"
+        id="quickNote"
+        autocomplete="off"
+      />
+    </div>
     <div id="filters">
       <button id="sort">
-        <img src="/sort-ascending.svg" alt="Sort" class="sort-ascending">
-        <img src="/sort-descending.svg" alt="Sort" class="sort-descending">
+        <img src="/images/sort-ascending.svg" alt="Sort" class="sort-ascending" />
+        <img src="/images/sort-descending.svg" alt="Sort" class="sort-descending" />
         <span>Oldest First</span>
       </button>
       <div id="filters-shadow">
@@ -37,7 +45,8 @@
         </div>
       </div>
     </div>
-    <ul id="list"></ul>
-    <script src="./script.js"></script>
+    <div id="list"></div>
+    <script src="./theme.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
