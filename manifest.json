@@ -5,8 +5,8 @@
     "manifest_version": 3,
     "author": "Furkan Doğan",
     "icons": {
-        "64": "assets/icon64x64.png",
-        "128": "assets/icon128x128.png"
+        "64": "assets/icon64.png",
+        "128": "assets/icon128.png"
     },
     "action": {
         "default_popup": "index.html",
