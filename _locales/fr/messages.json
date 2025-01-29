@@ -1,0 +1,133 @@
+{
+  "extensionName": {
+    "message": "Basic Notes",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Une extension simple pour prendre des notes sur votre navigateur. Utilisez des tags pour organiser vos notes. Pas besoin de vous connecter ou de vous inscrire.",
+    "description": "The description of the extension"
+  },
+  "welcomeMessage": {
+    "message": "Bienvenue",
+    "description": "The welcome message"
+  },
+  "quickNoteLabel": {
+    "message": "Note rapide",
+    "description": "The quick note message"
+  },
+  "sortNewest": {
+    "message": "Plus récent d'abord",
+    "description": "The order of the notes"
+  },
+  "sortOldest": {
+    "message": "Plus ancien d'abord",
+    "description": "The order of the notes"
+  },
+  "filterAll": {
+    "message": "Tout",
+    "description": "The filter of the notes"
+  },
+  "noNotes": {
+    "message": "Aucune note pour le moment. Commencez par ajouter une nouvelle note !",
+    "description": "Message shown when the user has no saved notes."
+  },
+  "deleteTagAlert": {
+    "message": "Êtes-vous sûr de vouloir supprimer ce tag ? Cette action est irréversible.",
+    "description": "Confirmation alert shown before permanently deleting a tag."
+  },
+  "deleteAlert": {
+    "message": "Êtes-vous sûr de vouloir supprimer cette note ? Cette action est irréversible.",
+    "description": "Confirmation alert shown before permanently deleting a note."
+  },
+  "addNote": {
+    "message": "Ajouter la note",
+    "description": "The add note button"
+  },
+  "noteTitle": {
+    "message": "Titre de la note",
+    "description": "The note title input"
+  },
+  "addTagInput": {
+    "message": "Ajouter un nouveau tag",
+    "description": "The add tag input"
+  },
+  "addTag": {
+    "message": "Ajouter le tag",
+    "description": "The add tag button"
+  },
+  "selectTag": {
+    "message": "Sélectionner un tag",
+    "description": "The select tag input"
+  },
+  "newNote": {
+    "message": "Écrivez votre note ici",
+    "description": "The new note textarea placeholder"
+  },
+  "saveNote": {
+    "message": "Enregistrer la note",
+    "description": "The save note button"
+  },
+  "blankNote": {
+    "message": "Le titre et le contenu de la note ne peuvent pas être vides",
+    "description": "The message when note title and content are blank"
+  },
+  "openLink": {
+    "message": "Ouvrir le lien",
+    "description": "The open link button"
+  },
+  "created": {
+    "message": "Créé",
+    "description": "The created date of the note"
+  },
+  "updated": {
+    "message": "Mis à jour",
+    "description": "The updated date of the note"
+  },
+  "editNote": {
+    "message": "Modifier la note",
+    "description": "The edit note button"
+  },
+  "updateNote": {
+    "message": "Mettre à jour la note",
+    "description": "The update note button"
+  },
+  "deleteNote": {
+    "message": "Supprimer la note",
+    "description": "The delete note button"
+  },
+  "about": {
+    "message": "À propos"
+  },
+  "faqQuestion1": {
+    "message": "Qu'est-ce que Basic Notes ?",
+    "description": "The first question of the FAQ"
+  },
+  "faqAnswer1": {
+    "message": "Basic Notes est une extension simple pour prendre des notes sur votre navigateur. Utilisez des tags pour organiser vos notes. Pas besoin de vous connecter ou de vous inscrire.",
+    "description": "The answer of the first question of the FAQ"
+  },
+  "faqQuestion2": {
+    "message": "Comment puis-je signaler un problème ou suggérer des améliorations ?",
+    "description": "The second question of the FAQ"
+  },
+  "faqAnswer2": {
+    "message": "Vous pouvez signaler un problème ou suggérer des améliorations en ouvrant un ticket sur GitHub:",
+    "description": "The answer of the second question of the FAQ"
+  },
+  "faqQuestion3": {
+    "message": "Comment puis-je contacter le développeur ?",
+    "description": "The third question of the FAQ"
+  },
+  "faqAnswer3": {
+    "message": "Vous pouvez contacter le développeur en envoyant un e-mail à",
+    "description": "The answer of the third question of the FAQ"
+  },
+  "faqQuestion4": {
+    "message": "Aimez vous Basic Notes ?",
+    "description": "The fourth question of the FAQ"
+  },
+  "faqAnswer4": {
+    "message": "Si vous aimez Basic Notes, n'hésitez pas à laisser une évaluation et à partager l'extension avec vos amis !",
+    "description": "The answer of the fourth question of the FAQ"
+  }
+}

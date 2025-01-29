@@ -24,7 +24,7 @@ if (note) {
       link.href = url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      let linkText = urls.length > 1 ? `Open Link ${index + 1}` : 'Open Link';
+      let linkText = urls.length > 1 ? chrome.i18n.getMessage("openLink") + " " + index : chrome.i18n.getMessage("openLink");
       link.textContent = linkText;
           
       const img = document.createElement('img');
@@ -60,7 +60,7 @@ document.getElementById("deleteNote").addEventListener("click", () => {
 });
 
 function deleteNote(a) {
-  if (window.confirm("Do you want to delete this item?")) {
+  if (window.confirm(chrome.i18n.getMessage("deleteNoteAlert"))) {
     notes.splice(a, 1);
     console.log(`Note number ${a} is deleted`);
     localStorage.setItem("notes", JSON.stringify(notes));
@@ -71,7 +71,7 @@ function deleteNote(a) {
 if(note.timestamp){
   const date = new Date(note.timestamp);
   const timestampElement = document.getElementById("note-created");
-  timestampElement.textContent = `Created: ${date.toLocaleString(undefined, {
+  timestampElement.textContent = `${chrome.i18n.getMessage("created")}: ${date.toLocaleString(undefined, {
     dateStyle: 'medium',
     timeStyle: 'short'
   })}`;
@@ -80,7 +80,7 @@ if(note.timestamp){
 if(note.updated){
   const date = new Date(note.updated);
   const updatedElement = document.getElementById("note-updated");
-  updatedElement.textContent = `Updated: ${date.toLocaleString(undefined, {
+  updatedElement.textContent = `${chrome.i18n.getMessage("updated")}: ${date.toLocaleString(undefined, {
     dateStyle: 'medium',
     timeStyle: 'short'
   })}`;

@@ -27,7 +27,7 @@ function saveNote() {
     const tags = Array.from(selectedTags);
 
     if (!title || !content) {
-        alert("Please fill in both title and content");
+        alert(chrome.i18n.getMessage("blankNote"));
         return;
     }
 

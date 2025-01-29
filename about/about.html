@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Extension Information</title>
+    <title>About</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <h1>About</h1>
+      <h1 data-i18n="about"></h1>
       <nav>
         <button id="theme">
           <img src="../images/moon.svg" alt="dark theme" />
@@ -29,22 +29,14 @@
     <main>
       <div class="collapseGroup">
         <details open>
-          <summary>What is this extension?</summary>
-          <p>
-            Basic Notes is an extension that allows you to take notes on your
-            browser. It is a simple and easy-to-use extension that allows you to
-            take notes on the go. It is meant to be lightweight and privacy
-            focused.
-          </p>
+          <summary data-i18n="faqQuestion1"></summary>
+          <p data-i18n="faqAnswer1"></p>
         </details>
 
         <details>
-          <summary>
-            Do you have an issue or do you want to suggest an improvement?
-          </summary>
+          <summary data-i18n="faqQuestion2"></summary>
           <p>
-            You can share the issues or the developments that you want to see
-            from this link:
+            <span data-i18n="faqAnswer2"></span>
             <a
               href="https://github.com/doganfurkan/basic-notes/issues"
               target="_blank"
@@ -56,9 +48,9 @@
         </details>
 
         <details>
-          <summary>Do you want to reach the developer?</summary>
+          <summary data-i18n="faqQuestion3"></summary>
           <p>
-            You can reach the developer at the following email address:
+            <span data-i18n="faqAnswer3"></span>
             <a href="mailto:devfurk@gmail.com" target="_blank">
               devfurk@gmail.com
             </a> <button id="copyEmail">Copy the Address</button>
@@ -66,17 +58,14 @@
         </details>
 
         <details>
-          <summary>Did you like the extension?</summary>
-          <p>
-            That is great to hear! You can support me by giving five stars on
-            the Add-ons page. You can also support me by sharing the extension
-            with your friends.
-          </p>
+          <summary data-i18n="faqQuestion4"></summary>
+          <p data-i18n="faqAnswer4"></p>
         </details>
       </div>
       <center>Basic Notes <span id="version"></span></center>
     </main>
     <script src="../theme.js"></script>
     <script src="about.js"></script>
+    <script src="../localize.js"></script>
   </body>
 </html>

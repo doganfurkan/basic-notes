@@ -1,0 +1,133 @@
+{
+  "extensionName": {
+    "message": "Basic Notes",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Быстро записывайте заметки прямо в браузере. Используйте теги для организации заметок. Регистрация не требуется.",
+    "description": "The description of the extension"
+  },
+  "welcomeMessage": {
+    "message": "Привет",
+    "description": "The welcome message"
+  },
+  "quickNoteLabel": {
+    "message": "Быстрая заметка",
+    "description": "The quick note message"
+  },
+  "sortNewest": {
+    "message": "Сначала новые",
+    "description": "The order of the notes"
+  },
+  "sortOldest": {
+    "message": "Сначала старые",
+    "description": "The order of the notes"
+  },
+  "filterAll": {
+    "message": "Все",
+    "description": "The filter of the notes"
+  },
+  "noNotes": {
+    "message": "Заметок пока нет. Начните с добавления новой заметки!",
+    "description": "Message shown when the user has no saved notes."
+  },
+  "deleteTagAlert": {
+    "message": "Вы уверены, что хотите удалить этот тег? Это действие нельзя отменить.",
+    "description": "Confirmation alert shown before permanently deleting a tag."
+  },
+  "deleteAlert": {
+    "message": "Вы уверены, что хотите удалить эту заметку? Это действие нельзя отменить.",
+    "description": "Confirmation alert shown before permanently deleting a note."
+  },
+  "addNote": {
+    "message": "Добавить заметку",
+    "description": "The add note button"
+  },
+  "noteTitle": {
+    "message": "Заголовок заметки",
+    "description": "The note title input"
+  },
+  "addTagInput": {
+    "message": "Добавить новый тег",
+    "description": "The add tag input"
+  },
+  "addTag": {
+    "message": "Добавить тег",
+    "description": "The add tag button"
+  },
+  "selectTag": {
+    "message": "Выберите тег",
+    "description": "The select tag input"
+  },
+  "newNote": {
+    "message": "Напишите заметку здесь",
+    "description": "The new note textarea placeholder"
+  },
+  "saveNote": {
+    "message": "Сохранить заметку",
+    "description": "The save note button"
+  },
+  "blankNote": {
+    "message": "Заголовок и содержимое заметки не могут быть пустыми",
+    "description": "The message when note title and content are blank"
+  },
+  "openLink": {
+    "message": "Открыть ссылку",
+    "description": "The open link button"
+  },
+  "created": {
+    "message": "Создано",
+    "description": "The created date of the note"
+  },
+  "updated": {
+    "message": "Обновлено",
+    "description": "The updated date of the note"
+  },
+  "editNote": {
+    "message": "Редактировать заметку",
+    "description": "The edit note button"
+  },
+  "updateNote": {
+    "message": "Обновить заметку",
+    "description": "The update note button"
+  },
+  "deleteNote": {
+    "message": "Удалить заметку",
+    "description": "The delete note button"
+  },
+  "about": {
+    "message": "О нас"
+  },
+  "faqQuestion1": {
+    "message": "Что такое Basic Notes?",
+    "description": "The first question of the FAQ"
+  },
+  "faqAnswer1": {
+    "message": "Basic Notes - это расширение для заметок, которое позволяет быстро записывать заметки прямо в браузере. Вы можете использовать теги для организации заметок. Регистрация не требуется.",
+    "description": "The answer of the first question of the FAQ"
+  },
+  "faqQuestion2": {
+    "message": "Как я могу сообщить об ошибках или предложить улучшения?",
+    "description": "The second question of the FAQ"
+  },
+  "faqAnswer2": {
+    "message": "Если у вас есть предложения или вы нашли ошибку, пожалуйста, отправьте сообщение разработчику по адресу электронной почты:",
+    "description": "The answer of the second question of the FAQ"
+  },
+  "faqQuestion3": {
+    "message": "Как я могу связаться с разработчиком?",
+    "description": "The third question of the FAQ"
+  },
+  "faqAnswer3": {
+    "message": "Вы можете связаться с разработчиком по адресу электронной почты:",
+    "description": "The answer of the third question of the FAQ"
+  },
+  "faqQuestion4": {
+    "message": "Что делать, если мне понравилось Basic Notes?",
+    "description": "The fourth question of the FAQ"
+  },
+  "faqAnswer4": {
+    "message": "Если вам понравилось это расширение, вы можете поставить ему пять звезд в магазине расширений. Также вы можете поделиться им с друзьями.",
+    "description": "The answer of the fourth question of the FAQ"
+  }
+}

@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-        <h1>Edit Note</h1>
+        <h1 data-i18n="editNote"></h1>
         <nav>
             <button id="theme">
                 <img src="../images/moon.svg" alt="dark theme" />
@@ -26,14 +26,14 @@
         </nav>
     </header>
     <div class="container">
-        <input type="text" id="title" placeholder="Note Title" autocomplete="off">
+        <input type="text" id="title" placeholder="" data-i18n="noteTitle" autocomplete="off">
         <div class="tag-section">
             <div style="display: flex; gap: 0.5rem;">
-                <input type="text" id="new-tag" placeholder="Add new tag" style="flex: 1;">
-                <button id="addTag" style="padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 4px;">Add Tag</button>
+                <input type="text" id="new-tag" placeholder="" data-i18n="addTagInput" style="flex: 1;">
+                <button id="addTag" data-i18n="addTag" style="padding: 8px 16px; background: var(--primary); color: white; border: none; border-radius: 4px;"></button>
             </div>
             <select id="tag-select">
-                <option value="">Select Tag</option>
+                <option value="" data-i18n="selectTag"></option>
             </select>
         </div>
 
@@ -41,12 +41,13 @@
             <!-- Selected tags will appear here -->
         </div>
 
-        <textarea id="note-content" placeholder="Write your note here..."></textarea>
+        <textarea id="note-content" placeholder="" data-i18n="newNote"></textarea>
 
-        <button id="updateNote">Update Note</button>
+        <button id="updateNote" data-i18n="updateNote"></button>
     </div>
     <script src="edit.js"></script>
     <script src="../theme.js"></script>
+    <script src="../localize.js"></script>
   </body>
 </html>
 

@@ -10,7 +10,7 @@ update();
 function update() {
     if (notes.length == 0) {
       document.getElementById("list").innerHTML =
-        "<span>There is nothing here</span>";
+        "<span>" + chrome.i18n.getMessage("noNotes") + "</span>";
     } else {
       document.getElementById("list").innerHTML = "";
       for (let i = 0; i < notes.length; i++) {
@@ -58,7 +58,7 @@ function update() {
     if (!document.getElementById("sort").classList.contains("ters")) {
       document.getElementById("sort").classList.add("ters");
     }
-    document.getElementById("sort").querySelector("span").textContent = "Newest First";
+    document.getElementById("sort").querySelector("span").textContent = chrome.i18n.getMessage("sortNewest");
   } else {
     localStorage.setItem("sorting", !document.getElementById("sort").classList.contains("ters"));
   }
@@ -80,7 +80,7 @@ function update() {
     deleteBtn.addEventListener("click", (e) => {
       e.stopPropagation(); // Prevent filter click
   
-      if (window.confirm("Do you want to delete this tag? It will be removed from all notes that have it.")) {
+      if (window.confirm(chrome.i18n.getMessage("deleteTagAlert"))) {
         // Remove tag from localStorage
         tags = tags.filter(t => t !== tag);
         localStorage.setItem("tags", JSON.stringify(tags));
@@ -126,7 +126,7 @@ function update() {
       });
   
       if (filteredNotes.length === 0) {
-        document.getElementById("list").innerHTML = "<span>No notes with this tag</span>";
+        document.getElementById("list").innerHTML = "<span>" + chrome.i18n.getMessage("noNotes") + "</span>";
       } else {
         document.getElementById("list").innerHTML = "";
         filteredNotes.forEach((note, index) => {
@@ -200,7 +200,7 @@ function update() {
   }
   
   function deleteNote(a) {
-    if (window.confirm("Do you want to delete this item?")) {
+    if (window.confirm(chrome.i18n.getMessage("deleteAlert"))) {
       notes.splice(a, 1);
       console.log(`Note number ${a} is deleted`);
       localStorage.setItem("notes", JSON.stringify(notes));
@@ -212,7 +212,7 @@ function update() {
     notes.reverse();
     localStorage.setItem("notes", JSON.stringify(notes));
     document.getElementById("sort").classList.toggle("ters");
-    document.getElementById("sort").querySelector("span").textContent = document.getElementById("sort").classList.contains("ters") ? "Newest First" : "Oldest First";
+    document.getElementById("sort").querySelector("span").textContent = document.getElementById("sort").classList.contains("ters") ? chrome.i18n.getMessage("sortNewest") : chrome.i18n.getMessage("sortOldest");
     localStorage.setItem("sorting", !document.getElementById("sort").classList.contains("ters"));
     allNotes();
     update();

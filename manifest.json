@@ -1,7 +1,8 @@
 {
-    "name": "Basic Notes",
+    "name": "__MSG_extensionName__",
     "version": "1.1.0",
-    "description": "Take quick notes from your browser. Use tags to organize your notes. No need to login or sign up.",
+    "description": "__MSG_extensionDescription__",
+    "default_locale": "en",
     "manifest_version": 3,
     "author": "Furkan Doğan",
     "icons": {

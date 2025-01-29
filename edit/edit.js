@@ -147,6 +147,6 @@ document.getElementById("updateNote").addEventListener("click", () => {
     localStorage.setItem("notes", JSON.stringify(notes));
     window.location.href = "../note/note.html?id=" + noteId;
   } else {
-    alert("Please fill in both title and content");
+    alert(chrome.i18n.getMessage("blankNote"));
   }
 });
