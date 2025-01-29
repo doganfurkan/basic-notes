@@ -11,7 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header id="topbar">
@@ -20,7 +24,9 @@
         <a id="about" href="./about/about.html">
           <img src="./images/info.svg" alt="information" />
         </a>
-        <button id="theme"><img src="./images/moon.svg" alt="dark theme" /></button>
+        <button id="theme">
+          <img src="./images/moon.svg" alt="dark theme" />
+        </button>
         <a id="addNote" href="./add/add.html">+</a>
       </nav>
     </header>
@@ -35,9 +41,17 @@
     </div>
     <div id="filters">
       <button id="sort">
-        <img src="/images/sort-ascending.svg" alt="Sort" class="sort-ascending" />
-        <img src="/images/sort-descending.svg" alt="Sort" class="sort-descending" />
-        <span data-i18n="sortOldest"></span>
+        <img
+          src="/images/sort-ascending.svg"
+          alt="Sort"
+          class="sort-ascending"
+        />
+        <img
+          src="/images/sort-descending.svg"
+          alt="Sort"
+          class="sort-descending"
+        />
+        <span></span>
       </button>
       <div id="filters-shadow">
         <div id="filters-container">
@@ -48,7 +62,7 @@
     </div>
     <div id="list"></div>
     <script src="./theme.js"></script>
-    <script src="index.js"></script>
     <script src="localize.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
