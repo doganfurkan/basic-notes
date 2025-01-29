@@ -129,5 +129,13 @@
   "faqAnswer4": {
     "message": "Если вам понравилось это расширение, вы можете поставить ему пять звезд в магазине расширений. Также вы можете поделиться им с друзьями.",
     "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "Выберите язык",
+    "description": "The language select input"
+  },
+  "defaultLanguage": {
+    "message": "Язык браузера",
+    "description": "The default language"
   }
 }

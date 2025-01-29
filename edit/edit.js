@@ -126,7 +126,7 @@ function removeTag(element) {
 }
 
 // Update note
-document.getElementById("updateNote").addEventListener("click", () => {
+document.getElementById("updateNote").addEventListener("click", async () => {
   const title = document.getElementById("title").value;
   const content = document.getElementById("note-content").value;
   const tagElements = document.querySelectorAll(".tag");
@@ -147,6 +147,6 @@ document.getElementById("updateNote").addEventListener("click", () => {
     localStorage.setItem("notes", JSON.stringify(notes));
     window.location.href = "../note/note.html?id=" + noteId;
   } else {
-    alert(chrome.i18n.getMessage("blankNote"));
+    alert(await localize("blankNote"));
   }
 });

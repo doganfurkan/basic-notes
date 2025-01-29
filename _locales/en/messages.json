@@ -129,5 +129,13 @@
   "faqAnswer4": {
     "message": "Enjoying Basic Notes? Support us by giving a 5-star review and sharing with friends!",
     "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "Select Language",
+    "description": "The select language input"
+  },
+  "defaultLanguage": {
+    "message": "Browser Language",
+    "description": "The default language"
   }
 }

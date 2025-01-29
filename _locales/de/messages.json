@@ -129,5 +129,13 @@
   "faqAnswer4": {
     "message": "Wenn Ihnen die Erweiterung gefallen hat, können Sie im Erweiterungsstore fünf Sterne vergeben und andere dazu ermutigen, sie zu verwenden.",
     "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "Sprache auswählen",
+    "description": "The language select input"
+  },
+  "defaultLanguage": {
+    "message": "Browsersprache",
+    "description": "The default language"
   }
 }

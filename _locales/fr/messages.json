@@ -129,5 +129,13 @@
   "faqAnswer4": {
     "message": "Si vous aimez Basic Notes, n'hésitez pas à laisser une évaluation et à partager l'extension avec vos amis !",
     "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "Sélectionner la langue",
+    "description": "The language select input"
+  },
+  "defaultLanguage": {
+    "message": "Langue du navigateur",
+    "description": "The default language"
   }
 }

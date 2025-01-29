@@ -7,10 +7,10 @@ let notes = localStorage.getItem("notes")
 
 update();
 
-function update() {
+async function update() {
   if (notes.length == 0) {
     document.getElementById("list").innerHTML =
-      "<span>" + chrome.i18n.getMessage("noNotes") + "</span>";
+      "<span>" + await localize("noNotes") + "</span>";
   } else {
     document.getElementById("list").innerHTML = "";
     for (let i = 0; i < notes.length; i++) {
@@ -59,20 +59,24 @@ function update() {
   }
 }
 
-if (localStorage.getItem("sorting") == "false") {
-  if (!document.getElementById("sort").classList.contains("ters")) {
-    document.getElementById("sort").classList.add("ters");
+async function sortCheck(){
+  if (localStorage.getItem("sorting") == "false") {
+    if (!document.getElementById("sort").classList.contains("ters")) {
+      document.getElementById("sort").classList.add("ters");
+    }
+    document.getElementById("sort").querySelector("span").textContent =
+      await localize("sortNewest");
+  } else {
+    localStorage.setItem(
+      "sorting",
+      !document.getElementById("sort").classList.contains("ters")
+    );
+    document.getElementById("sort").querySelector("span").textContent =
+      await localize("sortOldest");
   }
-  document.getElementById("sort").querySelector("span").textContent =
-    chrome.i18n.getMessage("sortNewest");
-} else {
-  localStorage.setItem(
-    "sorting",
-    !document.getElementById("sort").classList.contains("ters")
-  );
-  document.getElementById("sort").querySelector("span").textContent =
-    chrome.i18n.getMessage("sortOldest");
 }
+
+sortCheck();
 
 // Load tags from localStorage and create filter buttons
 let tags = localStorage.getItem("tags")
@@ -88,10 +92,10 @@ tags.forEach((tag) => {
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "×";
   deleteBtn.className = "tag-delete";
-  deleteBtn.addEventListener("click", (e) => {
+  deleteBtn.addEventListener("click", async (e) => {
     e.stopPropagation(); // Prevent filter click
 
-    if (window.confirm(chrome.i18n.getMessage("deleteTagAlert"))) {
+    if (window.confirm(await localize("deleteTagAlert"))) {
       // Remove tag from localStorage
       tags = tags.filter((t) => t !== tag);
       localStorage.setItem("tags", JSON.stringify(tags));
@@ -128,7 +132,7 @@ tags.forEach((tag) => {
   document.getElementById("filters-container").appendChild(filterBtn);
 });
 
-function filterNotes(tag) {
+async function filterNotes(tag) {
   if (notes.length > 0) {
     const filteredNotes = notes.filter((note) => {
       // Handle both old string notes and new note objects with tags
@@ -138,7 +142,7 @@ function filterNotes(tag) {
 
     if (filteredNotes.length === 0) {
       document.getElementById("list").innerHTML =
-        "<span>" + chrome.i18n.getMessage("noNotes") + "</span>";
+        "<span>" + await localize("noNotes") + "</span>";
     } else {
       document.getElementById("list").innerHTML = "";
       filteredNotes.forEach((note, index) => {
@@ -210,8 +214,8 @@ function check(event) {
   }
 }
 
-function deleteNote(a) {
-  if (window.confirm(chrome.i18n.getMessage("deleteAlert"))) {
+async function deleteNote(a) {
+  if (window.confirm(await localize("deleteAlert"))) {
     notes.splice(a, 1);
     console.log(`Note number ${a} is deleted`);
     localStorage.setItem("notes", JSON.stringify(notes));
@@ -219,19 +223,16 @@ function deleteNote(a) {
   }
 }
 
-function sortNotes() {
+async function sortNotes() {
   notes.reverse();
   localStorage.setItem("notes", JSON.stringify(notes));
   document.getElementById("sort").classList.toggle("ters");
   document.getElementById("sort").querySelector("span").textContent = document
     .getElementById("sort")
     .classList.contains("ters")
-    ? chrome.i18n.getMessage("sortNewest")
-    : chrome.i18n.getMessage("sortOldest");
-  localStorage.setItem(
-    "sorting",
-    !document.getElementById("sort").classList.contains("ters")
-  );
+    ? await localize("sortNewest")
+    : await localize("sortOldest");
+  localStorage.setItem("sorting",!document.getElementById("sort").classList.contains("ters"));
   allNotes();
   update();
 }

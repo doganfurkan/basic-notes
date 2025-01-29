@@ -129,5 +129,13 @@
   "faqAnswer4": {
     "message": "¡Déjanos saber tu opinión en la tienda de extensiones!",
     "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "Seleccionar lingua",
+    "description": "The language select input"
+  },
+  "defaultLanguage": {
+    "message": "Idioma de la navigateur",
+    "description": "The default language"
   }
 }

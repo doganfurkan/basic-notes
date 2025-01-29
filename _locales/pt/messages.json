@@ -1,133 +1,141 @@
 {
-    "extensionName": {
-        "message": "Basic Notes",
-        "description": "O nome da extensão"
-    },
-    "extensionDescription": {
-        "message": "Tome notas rápidas do seu navegador. Use tags para organizar suas notas. Não é necessário fazer login ou se inscrever.",
-        "description": "A descrição da extensão"
-    },
-    "welcomeMessage": {
-        "message": "Olá, Bem-vindo",
-        "description": "A mensagem de boas-vindas"
-    },
-    "quickNoteLabel": {
-        "message": "Nota Rápida",
-        "description": "A mensagem de nota rápida"
-    },
-    "sortNewest": {
-        "message": "Mais Recentes Primeiro",
-        "description": "A ordem das notas"
-    },
-    "sortOldest": {
-        "message": "Mais Antigas Primeiro",
-        "description": "A ordem das notas"
-    },
-    "filterAll": {
-        "message": "Todas",
-        "description": "O filtro das notas"
-    },
-    "noNotes": {
-        "message": "Ainda não há notas. Comece adicionando uma nova nota!",
-        "description": "Mensagem mostrada quando o usuário não tem notas salvas."
-    },
-    "deleteTagAlert": {
-        "message": "Tem certeza de que deseja excluir esta tag? Esta ação não pode ser desfeita.",
-        "description": "Alerta de confirmação mostrado antes de excluir permanentemente uma tag."
-    },
-    "deleteAlert": {
-        "message": "Tem certeza de que deseja excluir esta nota? Esta ação não pode ser desfeita.",
-        "description": "Alerta de confirmação mostrado antes de excluir permanentemente uma nota."
-    },
-    "addNote": {
-        "message": "Adicionar Nota",
-        "description": "O botão de adicionar nota"
-    },
-    "noteTitle": {
-        "message": "Título da Nota",
-        "description": "O campo de entrada do título da nota"
-    },
-    "addTagInput": {
-        "message": "Adicionar Nova Tag",
-        "description": "O campo de entrada de adicionar tag"
-    },
-    "addTag": {
-        "message": "Adicionar Tag",
-        "description": "O botão de adicionar tag"
-    },
-    "selectTag": {
-        "message": "Selecionar Tag",
-        "description": "O campo de entrada de selecionar tag"
-    },
-    "newNote": {
-        "message": "Escreva sua nota aqui",
-        "description": "O espaço reservado da área de texto da nova nota"
-    },
-    "saveNote": {
-        "message": "Salvar Nota",
-        "description": "O botão de salvar nota"
-    },
-    "blankNote": {
-        "message": "O título e o conteúdo da nota não podem estar em branco",
-        "description": "A mensagem quando o título e o conteúdo da nota estão em branco"
-    },
-    "openLink": {
-        "message": "Abrir Link",
-        "description": "O botão de abrir link"
-    },
-    "created": {
-        "message": "Criado",
-        "description": "A data de criação da nota"
-    },
-    "updated": {
-        "message": "Atualizado",
-        "description": "A data de atualização da nota"
-    },
-    "editNote": {
-        "message": "Editar Nota",
-        "description": "O botão de editar nota"
-    },
-    "updateNote": {
-        "message": "Atualizar Nota",
-        "description": "O botão de atualizar nota"
-    },
-    "deleteNote": {
-        "message": "Excluir Nota",
-        "description": "O botão de excluir nota"
-    },
-    "about": {
-        "message": "Sobre"
-    },
-    "faqQuestion1": {
-        "message": "O que é Notas Básicas?",
-        "description": "A primeira pergunta do FAQ"
-    },
-    "faqAnswer1": {
-        "message": "Notas Básicas é uma extensão que permite que você tome notas no seu navegador. É uma extensão simples e fácil de usar que permite que você tome notas em qualquer lugar. É leve e focada na privacidade.",
-        "description": "A resposta da primeira pergunta do FAQ"
-    },
-    "faqQuestion2": {
-        "message": "Tem uma sugestão ou encontrou um bug?",
-        "description": "A segunda pergunta do FAQ"
-    },
-    "faqAnswer2": {
-        "message": "Relate problemas e sugira melhorias aqui:",
-        "description": "A resposta da segunda pergunta do FAQ"
-    },
-    "faqQuestion3": {
-        "message": "Quer entrar em contato com o desenvolvedor?",
-        "description": "A terceira pergunta do FAQ"
-    },
-    "faqAnswer3": {
-        "message": "Você pode entrar em contato com o desenvolvedor no seguinte endereço de e-mail:",
-        "description": "A resposta da terceira pergunta do FAQ"
-    },
-    "faqQuestion4": {
-        "message": "Gostou da extensão?",
-        "description": "A quarta pergunta do FAQ"
-    },
-    "faqAnswer4": {
-        "message": "Gostando do Notas Básicas? Apoie-nos dando uma avaliação de 5 estrelas e compartilhando com amigos!",
-        "description": "A resposta da quarta pergunta do FAQ"
-    }
+  "extensionName": {
+    "message": "Basic Notes",
+    "description": "O nome da extensão"
+  },
+  "extensionDescription": {
+    "message": "Tome notas rápidas do seu navegador. Use tags para organizar suas notas. Não é necessário fazer login ou se inscrever.",
+    "description": "A descrição da extensão"
+  },
+  "welcomeMessage": {
+    "message": "Olá, Bem-vindo",
+    "description": "A mensagem de boas-vindas"
+  },
+  "quickNoteLabel": {
+    "message": "Nota Rápida",
+    "description": "A mensagem de nota rápida"
+  },
+  "sortNewest": {
+    "message": "Mais Recentes Primeiro",
+    "description": "A ordem das notas"
+  },
+  "sortOldest": {
+    "message": "Mais Antigas Primeiro",
+    "description": "A ordem das notas"
+  },
+  "filterAll": {
+    "message": "Todas",
+    "description": "O filtro das notas"
+  },
+  "noNotes": {
+    "message": "Ainda não há notas. Comece adicionando uma nova nota!",
+    "description": "Mensagem mostrada quando o usuário não tem notas salvas."
+  },
+  "deleteTagAlert": {
+    "message": "Tem certeza de que deseja excluir esta tag? Esta ação não pode ser desfeita.",
+    "description": "Alerta de confirmação mostrado antes de excluir permanentemente uma tag."
+  },
+  "deleteAlert": {
+    "message": "Tem certeza de que deseja excluir esta nota? Esta ação não pode ser desfeita.",
+    "description": "Alerta de confirmação mostrado antes de excluir permanentemente uma nota."
+  },
+  "addNote": {
+    "message": "Adicionar Nota",
+    "description": "O botão de adicionar nota"
+  },
+  "noteTitle": {
+    "message": "Título da Nota",
+    "description": "O campo de entrada do título da nota"
+  },
+  "addTagInput": {
+    "message": "Adicionar Nova Tag",
+    "description": "O campo de entrada de adicionar tag"
+  },
+  "addTag": {
+    "message": "Adicionar Tag",
+    "description": "O botão de adicionar tag"
+  },
+  "selectTag": {
+    "message": "Selecionar Tag",
+    "description": "O campo de entrada de selecionar tag"
+  },
+  "newNote": {
+    "message": "Escreva sua nota aqui",
+    "description": "O espaço reservado da área de texto da nova nota"
+  },
+  "saveNote": {
+    "message": "Salvar Nota",
+    "description": "O botão de salvar nota"
+  },
+  "blankNote": {
+    "message": "O título e o conteúdo da nota não podem estar em branco",
+    "description": "A mensagem quando o título e o conteúdo da nota estão em branco"
+  },
+  "openLink": {
+    "message": "Abrir Link",
+    "description": "O botão de abrir link"
+  },
+  "created": {
+    "message": "Criado",
+    "description": "A data de criação da nota"
+  },
+  "updated": {
+    "message": "Atualizado",
+    "description": "A data de atualização da nota"
+  },
+  "editNote": {
+    "message": "Editar Nota",
+    "description": "O botão de editar nota"
+  },
+  "updateNote": {
+    "message": "Atualizar Nota",
+    "description": "O botão de atualizar nota"
+  },
+  "deleteNote": {
+    "message": "Excluir Nota",
+    "description": "O botão de excluir nota"
+  },
+  "about": {
+    "message": "Sobre"
+  },
+  "faqQuestion1": {
+    "message": "O que é Notas Básicas?",
+    "description": "A primeira pergunta do FAQ"
+  },
+  "faqAnswer1": {
+    "message": "Notas Básicas é uma extensão que permite que você tome notas no seu navegador. É uma extensão simples e fácil de usar que permite que você tome notas em qualquer lugar. É leve e focada na privacidade.",
+    "description": "A resposta da primeira pergunta do FAQ"
+  },
+  "faqQuestion2": {
+    "message": "Tem uma sugestão ou encontrou um bug?",
+    "description": "A segunda pergunta do FAQ"
+  },
+  "faqAnswer2": {
+    "message": "Relate problemas e sugira melhorias aqui:",
+    "description": "A resposta da segunda pergunta do FAQ"
+  },
+  "faqQuestion3": {
+    "message": "Quer entrar em contato com o desenvolvedor?",
+    "description": "A terceira pergunta do FAQ"
+  },
+  "faqAnswer3": {
+    "message": "Você pode entrar em contato com o desenvolvedor no seguinte endereço de e-mail:",
+    "description": "A resposta da terceira pergunta do FAQ"
+  },
+  "faqQuestion4": {
+    "message": "Gostou da extensão?",
+    "description": "A quarta pergunta do FAQ"
+  },
+  "faqAnswer4": {
+    "message": "Gostando do Notas Básicas? Apoie-nos dando uma avaliação de 5 estrelas e compartilhando com amigos!",
+    "description": "A resposta da quarta pergunta do FAQ"
+  },
+  "languageSelect": {
+    "message": "Selecione o Idioma",
+    "description": "The language select input"
+  },
+  "defaultLanguage": {
+    "message": "Língua do navegador",
+    "description": "The default language"
+  }
 }
