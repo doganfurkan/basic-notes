@@ -36,7 +36,8 @@ input#quickNote {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem 0 0 1rem;
+  padding-block-start: 1rem;
+  padding-inline-start: 1rem;
   width: 100%;
 }
 
@@ -207,12 +208,23 @@ span.chosen button {
   border-top: 1px solid var(--borderColor);
 }
 
-button.deleteButton img {
-  width: 16px;
-  filter: invert(50%);
+button.deleteButton {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
   position: absolute;
   top: 16px;
   right: 16px;
+}
+
+html[dir="rtl"] button.deleteButton {
+  left: 16px;
+  right: auto;
+}
+
+button.deleteButton img {
+  width: 16px;
+  filter: invert(50%);
   background: inherit;
 }
 

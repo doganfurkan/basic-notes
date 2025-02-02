@@ -1,0 +1,141 @@
+{
+    "extensionName": {
+        "message": "基本笔记",
+        "description": "The name of the extension"
+    },
+    "extensionDescription": {
+        "message": "从浏览器快速记笔记。使用标签组织笔记。无需登录或注册。",
+        "description": "The description of the extension"
+    },
+    "welcomeMessage": {
+        "message": "你好，欢迎",
+        "description": "The welcome message"
+    },
+    "quickNoteLabel": {
+        "message": "快速笔记",
+        "description": "The quick note message"
+    },
+    "sortNewest": {
+        "message": "最新优先",
+        "description": "The order of the notes"
+    },
+    "sortOldest": {
+        "message": "最旧优先",
+        "description": "The order of the notes"
+    },
+    "filterAll": {
+        "message": "全部",
+        "description": "The filter of the notes"
+    },
+    "noNotes": {
+        "message": "还没有笔记。开始添加新笔记吧！",
+        "description": "Message shown when the user has no saved notes."
+    },
+    "deleteTagAlert": {
+        "message": "确定要删除此标签吗？此操作无法撤销。",
+        "description": "Confirmation alert shown before permanently deleting a tag."
+    },
+    "deleteAlert": {
+        "message": "确定要删除此笔记吗？此操作无法撤销。",
+        "description": "Confirmation alert shown before permanently deleting a note."
+    },
+    "addNote": {
+        "message": "添加笔记",
+        "description": "The add note button"
+    },
+    "noteTitle": {
+        "message": "笔记标题",
+        "description": "The note title input"
+    },
+    "addTagInput": {
+        "message": "添加新标签",
+        "description": "The add tag input"
+    },
+    "addTag": {
+        "message": "添加标签",
+        "description": "The add tag button"
+    },
+    "selectTag": {
+        "message": "选择标签",
+        "description": "The select tag input"
+    },
+    "newNote": {
+        "message": "在这里写下你的笔记",
+        "description": "The new note textarea placeholder"
+    },
+    "saveNote": {
+        "message": "保存笔记",
+        "description": "The save note button"
+    },
+    "blankNote": {
+        "message": "笔记标题和内容不能为空",
+        "description": "The message when note title and content are blank"
+    },
+    "openLink": {
+        "message": "打开链接",
+        "description": "The open link button"
+    },
+    "created": {
+        "message": "创建时间",
+        "description": "The created date of the note"
+    },
+    "updated": {
+        "message": "更新时间",
+        "description": "The updated date of the note"
+    },
+    "editNote": {
+        "message": "编辑笔记",
+        "description": "The edit note button"
+    },
+    "updateNote": {
+        "message": "更新笔记",
+        "description": "The update note button"
+    },
+    "deleteNote": {
+        "message": "删除笔记",
+        "description": "The delete note button"
+    },
+    "about": {
+        "message": "关于"
+    },
+    "faqQuestion1": {
+        "message": "什么是基本笔记？",
+        "description": "The first question of the FAQ"
+    },
+    "faqAnswer1": {
+        "message": "基本笔记是一个允许你在浏览器上记笔记的扩展。它是一个简单易用的扩展，允许你随时随地记笔记。它旨在轻量化和注重隐私。",
+        "description": "The answer of the first question of the FAQ"
+    },
+    "faqQuestion2": {
+        "message": "有建议或发现了错误？",
+        "description": "The second question of the FAQ"
+    },
+    "faqAnswer2": {
+        "message": "在这里报告问题和建议改进：",
+        "description": "The answer of the second question of the FAQ"
+    },
+    "faqQuestion3": {
+        "message": "想联系开发者吗？",
+        "description": "The third question of the FAQ"
+    },
+    "faqAnswer3": {
+        "message": "你可以通过以下电子邮件地址联系开发者：",
+        "description": "The answer of the third question of the FAQ"
+    },
+    "faqQuestion4": {
+        "message": "你喜欢这个扩展吗？",
+        "description": "The fourth question of the FAQ"
+    },
+    "faqAnswer4": {
+        "message": "喜欢基本笔记吗？通过给我们五星好评和分享给朋友来支持我们！",
+        "description": "The answer of the fourth question of the FAQ"
+    },
+    "languageSelect": {
+        "message": "选择语言",
+        "description": "The select language input"
+    },
+    "defaultLanguage": {
+        "message": "浏览器语言",
+        "description": "The default language"
+    }
+}

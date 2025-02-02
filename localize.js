@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+  document.documentElement.setAttribute("dir", localStorage.getItem("prefferedLanguage") === "ar" ? "rtl" : "ltr");
 });
 
 async function localize(messageKey) {
@@ -34,5 +35,17 @@ async function localize(messageKey) {
       });
   }
   console.log(localized);
+  checkRTL();
   return localized;
+}
+
+function checkRTL() {
+  if (
+    localStorage.getItem("prefferedLanguage") === "ar"
+  ) {
+    document.body.style.direction = "rtl";
+    
+  } else {
+    document.body.style.direction = "ltr";
+  }
 }

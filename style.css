@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("fonts/DMSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("fonts/NotoSansKr.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("fonts/NotoSansJp.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url("fonts/NotoSansSC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans AR";
+  src: url("fonts/NotoSansAr.ttf") format("truetype");
+}
+
 :root {
   --bg: #fff;
   --bgSubtle: #f4f4f4;
@@ -18,7 +43,7 @@ body.dark {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", "Noto Sans KR", "Noto Sans JP", "Noto Sans SC", "Noto Sans AR", sans-serif;
 }
 
 html {
