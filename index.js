@@ -9,8 +9,9 @@ update();
 
 async function update() {
   if (notes.length == 0) {
-    document.getElementById("list").innerHTML =
-      "<span>" + await localize("noNotes") + "</span>";
+    const noNotes = document.createElement("span");
+    noNotes.textContent = await localize("noNotes");
+    document.getElementById("list").appendChild(noNotes);
   } else {
     document.getElementById("list").innerHTML = "";
     for (let i = 0; i < notes.length; i++) {
@@ -141,8 +142,9 @@ async function filterNotes(tag) {
     });
 
     if (filteredNotes.length === 0) {
-      document.getElementById("list").innerHTML =
-        "<span>" + await localize("noNotes") + "</span>";
+      const noNotes = document.createElement("span");
+      noNotes.textContent = await localize("noNotes");
+      document.getElementById("list").appendChild(noNotes);
     } else {
       document.getElementById("list").innerHTML = "";
       filteredNotes.forEach((note, index) => {
