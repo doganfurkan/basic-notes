@@ -137,5 +137,14 @@
   "defaultLanguage": {
     "message": "Browsersprache",
     "description": "The default language"
+  },
+  "openPopup": {
+    "message": "In neuem Fenster öffnen",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "Wenn Sie nicht möchten, dass Ihre Notiz geschlossen wird, wenn Sie mit dem Browser interagieren, können Sie sie in einem neuen Fenster öffnen.",
+    "description": "The open popup tooltip"
   }
+
 }

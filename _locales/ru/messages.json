@@ -137,5 +137,13 @@
   "defaultLanguage": {
     "message": "Язык браузера",
     "description": "The default language"
+  },
+  "openPopup": {
+    "message": "Открыть в новом окне",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "Если вы не хотите, чтобы ваша заметка закрылась при взаимодействии с браузером, вы можете открыть ее в новом окне.",
+    "description": "The open popup tooltip"
   }
 }

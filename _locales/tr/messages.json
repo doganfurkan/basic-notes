@@ -137,5 +137,13 @@
   "defaultLanguage": {
     "message": "Tarayıcı Dili",
     "description": "The default language"
+  },
+  "openPopup": {
+    "message": "Notu yeni pencerede aç",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "Notunuzun sürekli açık olmasını istiyorsanız, yeni bir pencerede açabilirsiniz",
+    "description": "The open popup tooltip"
   }
 }

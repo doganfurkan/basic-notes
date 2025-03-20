@@ -137,5 +137,13 @@
   "defaultLanguage": {
     "message": "Língua do navegador",
     "description": "The default language"
+  },
+  "openPopup": {
+    "message": "Abrir em uma nova janela",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "Se não quiser que sua nota seja fechada ao interagir com o navegador, você pode abri-la em uma nova janela.",
+    "description": "The open popup tooltip"
   }
 }

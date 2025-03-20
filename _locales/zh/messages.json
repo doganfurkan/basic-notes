@@ -137,5 +137,13 @@
     "defaultLanguage": {
         "message": "浏览器语言",
         "description": "The default language"
-    }
+    },
+    "openPopup": {
+        "message": "在新窗口中打开",
+        "description": "The open popup button"
+      },
+      "openPopupTooltip": {
+        "message": "如果你不希望在与浏览器互动时关闭你的笔记，你可以在新窗口中打开它。",
+        "description": "The open popup tooltip"
+      }    
 }

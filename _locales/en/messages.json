@@ -137,5 +137,13 @@
   "defaultLanguage": {
     "message": "Browser Language",
     "description": "The default language"
+  },
+  "openPopup": {
+    "message": "Open in a New Window",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "If you don't want your note to keep closing when you intract with the browser, you can open it in a new window.",
+    "description": "The open popup tooltip"
   }
 }

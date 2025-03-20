@@ -137,5 +137,13 @@
   "defaultLanguage": {
     "message": "ブラウザの言語",
     "description": "The default language"
+  },
+  "openPopup": {
+    "message": "新しいウィンドウで開く",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "ブラウザーと対話してもノートが閉じないようにしたい場合は、新しいウィンドウで開くことができます。",
+    "description": "The open popup tooltip"
   }
 }

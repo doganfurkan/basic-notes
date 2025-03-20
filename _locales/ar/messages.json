@@ -137,5 +137,13 @@
   "defaultLanguage": {
     "message": "لغة المتصفح",
     "description": "The default language"
+  },
+  "openPopup": {
+    "message": "افتح في نافذة جديدة",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "إذا كنت لا ترغب في إغلاق ملاحظتك عند التفاعل مع المتصفح، يمكنك فتحها في نافذة جديدة.",
+    "description": "The open popup tooltip"
   }
 }
