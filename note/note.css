@@ -84,9 +84,51 @@ body.dark .note-content a img {
   gap: 0.5rem;
 }
 
+#openPopup {
+  background: transparent;
+  border: 1px solid var(--primary);
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  max-width: 300px;
+  white-space: normal;
+  width: max-content;
+  padding: 12px;
+  background: var(--bg);
+  border-radius: 6px;
+  color: var(--textClr);
+  top:-4px;
+  left:50%;
+  transform: translate(-50%,-100%);
+  border:1px solid var(--borderColor);
+  font-weight:400;
+  line-height: 1.35;
+  user-select: none;
+  pointer-events: none;
+}
+
+#openPopup:hover > .tooltip,
+#openPopup:focus > .tooltip,
+.tooltip:hover {
+  display: block;
+}
+
 #note-actions {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
   padding: 24px;
+  flex-wrap: wrap;
 }

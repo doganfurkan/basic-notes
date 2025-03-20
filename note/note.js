@@ -59,6 +59,10 @@ document.getElementById("deleteNote").addEventListener("click", () => {
   deleteNote(noteId);
 });
 
+document.getElementById("openPopup").addEventListener("click", () => {
+  openPopup();
+});
+
 async function deleteNote(a) {
   if (window.confirm(await localize("deleteNoteAlert"))) {
     notes.splice(a, 1);
@@ -66,6 +70,15 @@ async function deleteNote(a) {
     localStorage.setItem("notes", JSON.stringify(notes));
     window.location.href = "../index.html";
   }
+}
+
+function openPopup(){
+  chrome.windows.create({
+    url: chrome.runtime.getURL(`note/note.html?id=${noteId}`),
+    type: 'popup',
+    width: 500,
+    height: 600
+  });
 }
 
 async function showCreatedDate() {
