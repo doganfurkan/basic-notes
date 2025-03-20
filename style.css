@@ -29,6 +29,7 @@
   --borderColor: #e0e0e0;
   --filterBtn: #001219;
   --primary: #00AFF5;
+  --textClr: #272727;
 }
 
 body.dark {
@@ -36,7 +37,7 @@ body.dark {
   --bgSubtle: #0a5976;
   --borderColor: #003A52;
   --filterBtn: #f4f4f4;
-  color: #f4f4f4;
+  --textClr: #f4f4f4;
 }
 
 * {
@@ -57,7 +58,7 @@ body {
   margin: 0;
   background: var(--bg);
   overflow: auto;
-  color: #272727;
+  color: var(--textClr);
   padding-bottom: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
