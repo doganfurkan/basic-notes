@@ -14,8 +14,7 @@
         "default_title": "Basic Notes"
     },
     "permissions": [
-        "storage",
-        "windows"
+        "storage"
     ],
     "browser_specific_settings": {
         "gecko": {
