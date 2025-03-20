@@ -22,7 +22,8 @@ async function update() {
           ? notes[i].title
           : notes[i].content;
       let s = document.createElement("div");
-      const span = document.createElement("span");
+      const span = document.createElement("a");
+      span.href = `note/note.html?id=${i}`;
       span.textContent = noteText;
       const button = document.createElement("button");
       button.className = "deleteButton";
@@ -33,10 +34,7 @@ async function update() {
       s.appendChild(span);
       s.appendChild(button);
       if (typeof notes[i] === "object") {
-        s.querySelector("span").style.cursor = "pointer";
-        s.querySelector("span").addEventListener("click", () => {
-          window.location.href = `note/note.html?id=${i}`;
-        });
+        s.querySelector("a").style.cursor = "pointer";
       }
       document.getElementById("list").appendChild(s);
     }
@@ -60,7 +58,7 @@ async function update() {
   }
 }
 
-async function sortCheck(){
+async function sortCheck() {
   if (localStorage.getItem("sorting") == "false") {
     if (!document.getElementById("sort").classList.contains("ters")) {
       document.getElementById("sort").classList.add("ters");
@@ -234,7 +232,10 @@ async function sortNotes() {
     .classList.contains("ters")
     ? await localize("sortNewest")
     : await localize("sortOldest");
-  localStorage.setItem("sorting",!document.getElementById("sort").classList.contains("ters"));
+  localStorage.setItem(
+    "sorting",
+    !document.getElementById("sort").classList.contains("ters")
+  );
   allNotes();
   update();
 }

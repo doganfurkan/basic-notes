@@ -27,7 +27,7 @@ input#quickNote {
   position: relative;
 }
 
-#list > div > span {
+#list > div > a {
   max-width: calc(100% - 16px);
   overflow-wrap: break-word;
 }
