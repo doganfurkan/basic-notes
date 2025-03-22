@@ -21,13 +21,13 @@ function generateUniqueId() {
 }
 
 // Note saving functionality
-function saveNote() {
+async function saveNote() {
     const title = document.getElementById("title").value;
     const content = document.getElementById("note-content").value;
     const tags = Array.from(selectedTags);
 
     if (!title || !content) {
-        alert("Please fill in both title and content");
+        alert(await localize("blankNote"));
         return;
     }
 

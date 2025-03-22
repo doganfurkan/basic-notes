@@ -1,0 +1,149 @@
+{
+  "extensionName": {
+    "message": "基本メモ",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "ブラウザから素早くメモを取ります。タグを使ってメモを整理します。ログインやサインアップは不要です。",
+    "description": "The description of the extension"
+  },
+  "welcomeMessage": {
+    "message": "こんにちは",
+    "description": "The welcome message"
+  },
+  "quickNoteLabel": {
+    "message": "クイックメモ",
+    "description": "The quick note message"
+  },
+  "sortNewest": {
+    "message": "新しい順",
+    "description": "The order of the notes"
+  },
+  "sortOldest": {
+    "message": "古い順",
+    "description": "The order of the notes"
+  },
+  "filterAll": {
+    "message": "すべて",
+    "description": "The filter of the notes"
+  },
+  "noNotes": {
+    "message": "まだメモがありません。新しいメモを追加して始めましょう！",
+    "description": "Message shown when the user has no saved notes."
+  },
+  "deleteTagAlert": {
+    "message": "このタグを削除してもよろしいですか？この操作は元に戻せません。",
+    "description": "Confirmation alert shown before permanently deleting a tag."
+  },
+  "deleteAlert": {
+    "message": "このメモを削除してもよろしいですか？この操作は元に戻せません。",
+    "description": "Confirmation alert shown before permanently deleting a note."
+  },
+  "addNote": {
+    "message": "メモを追加",
+    "description": "The add note button"
+  },
+  "noteTitle": {
+    "message": "メモのタイトル",
+    "description": "The note title input"
+  },
+  "addTagInput": {
+    "message": "新しいタグを追加",
+    "description": "The add tag input"
+  },
+  "addTag": {
+    "message": "タグを追加",
+    "description": "The add tag button"
+  },
+  "selectTag": {
+    "message": "タグを選択",
+    "description": "The select tag input"
+  },
+  "newNote": {
+    "message": "ここにメモを書いてください",
+    "description": "The new note textarea placeholder"
+  },
+  "saveNote": {
+    "message": "メモを保存",
+    "description": "The save note button"
+  },
+  "blankNote": {
+    "message": "メモのタイトルと内容は空白にできません",
+    "description": "The message when note title and content are blank"
+  },
+  "openLink": {
+    "message": "リンクを開く",
+    "description": "The open link button"
+  },
+  "created": {
+    "message": "作成日",
+    "description": "The created date of the note"
+  },
+  "updated": {
+    "message": "更新日",
+    "description": "The updated date of the note"
+  },
+  "editNote": {
+    "message": "メモを編集",
+    "description": "The edit note button"
+  },
+  "updateNote": {
+    "message": "メモを更新",
+    "description": "The update note button"
+  },
+  "deleteNote": {
+    "message": "メモを削除",
+    "description": "The delete note button"
+  },
+  "about": {
+    "message": "約"
+  },
+  "faqQuestion1": {
+    "message": "基本メモとは何ですか？",
+    "description": "The first question of the FAQ"
+  },
+  "faqAnswer1": {
+    "message": "基本メモは、ブラウザ上でメモを取ることができる拡張機能です。シンプルで使いやすく、軽量でプライバシー重視の拡張機能です。",
+    "description": "The answer of the first question of the FAQ"
+  },
+  "faqQuestion2": {
+    "message": "提案やバグを見つけましたか？",
+    "description": "The second question of the FAQ"
+  },
+  "faqAnswer2": {
+    "message": "問題を報告し、改善を提案してください：",
+    "description": "The answer of the second question of the FAQ"
+  },
+  "faqQuestion3": {
+    "message": "開発者に連絡したいですか？",
+    "description": "The third question of the FAQ"
+  },
+  "faqAnswer3": {
+    "message": "以下のメールアドレスで開発者に連絡できます：",
+    "description": "The answer of the third question of the FAQ"
+  },
+  "faqQuestion4": {
+    "message": "拡張機能が気に入りましたか？",
+    "description": "The fourth question of the FAQ"
+  },
+  "faqAnswer4": {
+    "message": "基本メモを楽しんでいますか？5つ星のレビューをして、友達と共有してサポートしてください！",
+    "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "言語を選択",
+    "description": "The select language input"
+  },
+  "defaultLanguage": {
+    "message": "ブラウザの言語",
+    "description": "The default language"
+  },
+  "openPopup": {
+    "message": "新しいウィンドウで開く",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "ブラウザーと対話してもノートが閉じないようにしたい場合は、新しいウィンドウで開くことができます。",
+    "description": "The open popup tooltip"
+  }
+}

@@ -3,12 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
     <title>Add Note</title>
     <link rel="stylesheet" href="add.css" />
     <link rel="stylesheet" href="../style.css" />
@@ -16,7 +10,7 @@
 
   <body>
     <header>
-      <h1>Add Note</h1>
+      <h1 data-i18n="addNote"></h1>
       <nav>
         <button id="theme">
           <img src="../images/moon.svg" alt="dark theme" />
@@ -31,26 +25,27 @@
       <input
         type="text"
         id="title"
-        placeholder="Note Title"
+        placeholder=""
         autocomplete="off"
+        data-i18n="noteTitle"
       />
       <div class="tagInputContainer">
-        <input type="text" id="new-tag" placeholder="Add new tag" />
-        <button id="addTag">Add Tag</button>
+        <input type="text" id="new-tag" placeholder="" data-i18n="addTagInput"/>
+        <button id="addTag" data-i18n="addTag"></button>
       </div>
       <select id="tag-select">
-        <option value="">Select Tag</option>
+        <option value="" data-i18n="selectTag"></option>
       </select>
 
       <div class="tag-container" id="selected-tags">
         <!-- Selected tags will appear here -->
       </div>
 
-      <textarea id="note-content" placeholder="Write your note here...">
-      </textarea>
+      <textarea id="note-content" placeholder="" data-i18n="newNote"></textarea>
 
-      <button id="saveNote">Save Note</button>
+      <button id="saveNote" data-i18n="saveNote"></button>
     </div>
+    <script src="../localize.js"></script>
     <script src="./add.js"></script>
     <script src="../theme.js"></script>
   </body>

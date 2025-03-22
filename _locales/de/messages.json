@@ -1,0 +1,150 @@
+{
+  "extensionName": {
+    "message": "Basic Notes",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Machen Sie schnelle Notizen in Ihrem Browser. Verwenden Sie Tags, um Ihre Notizen zu organisieren. Keine Anmeldung oder Registrierung erforderlich.",
+    "description": "The description of the extension"
+  },
+  "welcomeMessage": {
+    "message": "Willkommen",
+    "description": "The welcome message"
+  },
+  "quickNoteLabel": {
+    "message": "Schnelle Notiz",
+    "description": "The quick note message"
+  },
+  "sortNewest": {
+    "message": "Neueste zuerst",
+    "description": "The order of the notes"
+  },
+  "sortOldest": {
+    "message": "Älteste zuerst",
+    "description": "The order of the notes"
+  },
+  "filterAll": {
+    "message": "Alle",
+    "description": "The filter of the notes"
+  },
+  "noNotes": {
+    "message": "Noch keine Notizen. Beginnen Sie, indem Sie eine neue Notiz hinzufügen!",
+    "description": "Message shown when the user has no saved notes."
+  },
+  "deleteTagAlert": {
+    "message": "Möchten Sie dieses Tag wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "description": "Confirmation alert shown before permanently deleting a tag."
+  },
+  "deleteAlert": {
+    "message": "Möchten Sie diese Notiz wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "description": "Confirmation alert shown before permanently deleting a note."
+  },
+  "addNote": {
+    "message": "Notiz hinzufügen",
+    "description": "The add note button"
+  },
+  "noteTitle": {
+    "message": "Notiztitel",
+    "description": "The note title input"
+  },
+  "addTagInput": {
+    "message": "Neuen Tag hinzufügen",
+    "description": "The add tag input"
+  },
+  "addTag": {
+    "message": "Tag hinzufügen",
+    "description": "The add tag button"
+  },
+  "selectTag": {
+    "message": "Tag auswählen",
+    "description": "The select tag input"
+  },
+  "newNote": {
+    "message": "Schreiben Sie hier Ihre Notiz",
+    "description": "The new note textarea placeholder"
+  },
+  "saveNote": {
+    "message": "Notiz speichern",
+    "description": "The save note button"
+  },
+  "blankNote": {
+    "message": "Bitte geben Sie einen Titel und Inhalt für die Notiz ein",
+    "description": "The message when note title and content are blank"
+  },
+  "openLink": {
+    "message": "Link öffnen",
+    "description": "The open link button"
+  },
+  "created": {
+    "message": "Erstellt",
+    "description": "The created date of the note"
+  },
+  "updated": {
+    "message": "Aktualisiert",
+    "description": "The updated date of the note"
+  },
+  "editNote": {
+    "message": "Notiz bearbeiten",
+    "description": "The edit note button"
+  },
+  "updateNote": {
+    "message": "Notiz aktualisieren",
+    "description": "The update note button"
+  },
+  "deleteNote": {
+    "message": "Notiz löschen",
+    "description": "The delete note button"
+  },
+  "about": {
+    "message": "Über"
+  },
+  "faqQuestion1": {
+    "message": "Was ist Basic Notes?",
+    "description": "The first question of the FAQ"
+  },
+  "faqAnswer1": {
+    "message": "Basic Notes ist eine einfache Notiz-App für Ihren Browser. Sie können Notizen erstellen, bearbeiten und löschen, ohne sich anmelden oder registrieren zu müssen. Verwenden Sie Tags, um Ihre Notizen zu organisieren und zu filtern. Basic Notes speichert Ihre Notizen lokal in Ihrem Browser, sodass Sie jederzeit darauf zugreifen können.",
+    "description": "The answer of the first question of the FAQ"
+  },
+  "faqQuestion2": {
+    "message": "Haben Sie ein Problem oder eine Verbesserungsidee?",
+    "description": "The second question of the FAQ"
+  },
+  "faqAnswer2": {
+    "message": "Wenn Sie ein Problem haben oder eine Verbesserungsidee für Basic Notes haben, können Sie dies über den folgenden GitHub-Link melden: ",
+    "description": "The answer of the second question of the FAQ"
+  },
+  "faqQuestion3": {
+    "message": "Wie kann ich den Entwickler kontaktieren?",
+    "description": "The third question of the FAQ"
+  },
+  "faqAnswer3": {
+    "message": "Sie können den Entwickler über die folgende E-Mail-Adresse erreichen: ",
+    "description": "The answer of the third question of the FAQ"
+  },
+  "faqQuestion4": {
+    "message": "Hat Ihnen die Erweiterung gefallen?",
+    "description": "The fourth question of the FAQ"
+  },
+  "faqAnswer4": {
+    "message": "Wenn Ihnen die Erweiterung gefallen hat, können Sie im Erweiterungsstore fünf Sterne vergeben und andere dazu ermutigen, sie zu verwenden.",
+    "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "Sprache auswählen",
+    "description": "The language select input"
+  },
+  "defaultLanguage": {
+    "message": "Browsersprache",
+    "description": "The default language"
+  },
+  "openPopup": {
+    "message": "In neuem Fenster öffnen",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "Wenn Sie nicht möchten, dass Ihre Notiz geschlossen wird, wenn Sie mit dem Browser interagieren, können Sie sie in einem neuen Fenster öffnen.",
+    "description": "The open popup tooltip"
+  }
+
+}

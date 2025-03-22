@@ -108,3 +108,11 @@ details p a{
 center{
     margin-top:16px;
 }
+
+.languageSelect{
+  margin-block-start: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:.5rem;
+}

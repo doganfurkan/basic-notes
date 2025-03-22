@@ -1,0 +1,149 @@
+{
+  "extensionName": {
+    "message": "Basic Notes",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Tarayıcınızda hızlı notlar alın. Notlarınızı düzenlemek için etiketler kullanın. Kayıt olmaya ihtiyacınız olmadan hemen kullanmaya başlayın.",
+    "description": "The description of the extension"
+  },
+  "welcomeMessage": {
+    "message": "Hoş geldiniz!",
+    "description": "The welcome message"
+  },
+  "quickNoteLabel": {
+    "message": "Hızlı Not",
+    "description": "The quick note message"
+  },
+  "sortNewest": {
+    "message": "Önce En Yeni",
+    "description": "The order of the notes"
+  },
+  "sortOldest": {
+    "message": "Önce En Eski",
+    "description": "The order of the notes"
+  },
+  "filterAll": {
+    "message": "Tümü",
+    "description": "The filter of the notes"
+  },
+  "noNotes": {
+    "message": "Henüz hiç notunuz yok. İlk notunuzu hemen ekleyin!",
+    "description": "Message shown when the user has no saved notes."
+  },
+  "deleteTagAlert": {
+    "message": "Bu etiketi kalıcı olarak silmek istediğinizden emin misiniz?",
+    "description": "Confirmation alert shown before permanently deleting a tag."
+  },
+  "deleteAlert": {
+    "message": "Bu notu kalıcı olarak silmek istediğinizden emin misiniz?",
+    "description": "Confirmation alert shown before permanently deleting a note."
+  },
+  "addNote": {
+    "message": "Not Ekle",
+    "description": "The add note button"
+  },
+  "noteTitle": {
+    "message": "Not Başlığı",
+    "description": "The note title input"
+  },
+  "addTagInput": {
+    "message": "Yeni Etiket Ekle",
+    "description": "The add tag input"
+  },
+  "addTag": {
+    "message": "Etiket Ekle",
+    "description": "The add tag button"
+  },
+  "selectTag": {
+    "message": "Etiket Seç",
+    "description": "The select tag input"
+  },
+  "newNote": {
+    "message": "Notunuzu buraya yazın...",
+    "description": "The new note textarea placeholder"
+  },
+  "saveNote": {
+    "message": "Notu Kaydet",
+    "description": "The save note button"
+  },
+  "blankNote": {
+    "message": "Not başlığı ve içerik boş olamaz",
+    "description": "The message when note title and content are blank"
+  },
+  "openLink": {
+    "message": "Bağlantıyı Aç",
+    "description": "The open link button"
+  },
+  "created": {
+    "message": "Oluşturuldu",
+    "description": "The created date of the note"
+  },
+  "updated": {
+    "message": "Güncellendi",
+    "description": "The updated date of the note"
+  },
+  "editNote": {
+    "message": "Notu Düzenle",
+    "description": "The edit note button"
+  },
+  "updateNote": {
+    "message": "Notu Güncelle",
+    "description": "The update note button"
+  },
+  "deleteNote": {
+    "message": "Notu Sil",
+    "description": "The delete note button"
+  },
+  "about": {
+    "message": "Hakkında"
+  },
+  "faqQuestion1": {
+    "message": "Basic Notes nedir?",
+    "description": "The first question of the FAQ"
+  },
+  "faqAnswer1": {
+    "message": "Basic Notes, tarayıcınızda hızlı notlar almanızı sağlayan bir eklentidir. Notlarınızı etiketlerle düzenleyebilirsiniz. Kayıt olmaya veya giriş yapmaya gerek yoktur.",
+    "description": "The answer of the first question of the FAQ"
+  },
+  "faqQuestion2": {
+    "message": "Sorun mu yaşıyorsunuz veya iyileştirme önerileriniz mi var?",
+    "description": "The second question of the FAQ"
+  },
+  "faqAnswer2": {
+    "message": "Sorun yaşıyorsanız veya iyileştirme önerileriniz varsa, lütfen şu linkten geri bildirimde bulunun:",
+    "description": "The answer of the second question of the FAQ"
+  },
+  "faqQuestion3": {
+    "message": "Geliştiriciye nasıl ulaşabilirim?",
+    "description": "The third question of the FAQ"
+  },
+  "faqAnswer3": {
+    "message": "Geliştiriciye ulaşmak için aşağıdaki e-posta adresine yazabilirsiniz:",
+    "description": "The answer of the third question of the FAQ"
+  },
+  "faqQuestion4": {
+    "message": "Basic Notes'u beğendiniz mi?",
+    "description": "The fourth question of the FAQ"
+  },
+  "faqAnswer4": {
+    "message": "Eğer Basic Notes'u beğendiyseniz, lütfen bir değerlendirme yapın veya geri bildirimde bulunun.",
+    "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "Dil Seç",
+    "description": "The language select input"
+  },
+  "defaultLanguage": {
+    "message": "Tarayıcı Dili",
+    "description": "The default language"
+  },
+  "openPopup": {
+    "message": "Notu yeni pencerede aç",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "Notunuzun sürekli açık olmasını istiyorsanız, yeni bir pencerede açabilirsiniz",
+    "description": "The open popup tooltip"
+  }
+}

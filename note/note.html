@@ -4,14 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note Details</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="note.css" />
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
     <header>
@@ -36,10 +30,15 @@
     </div>
 
     <div id="note-actions">
-      <button id="editNote">Edit Note</button>
-      <button id="deleteNote">Delete Note</button>
+      <button id="editNote" data-i18n="editNote"></button>
+      <button id="deleteNote" data-i18n="deleteNote"></button>
+      <button id="openPopup">
+        <span data-i18n="openPopup"></span>
+        <span class="tooltip" data-i18n="openPopupTooltip"></span>
+      </button>
     </div>
 
+    <script src="../localize.js"></script>
     <script src="note.js"></script>
     <script src="../theme.js"></script>
   </body>

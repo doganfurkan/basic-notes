@@ -1,0 +1,149 @@
+{
+  "extensionName": {
+    "message": "ملاحظات أساسية",
+    "description": "The name of the extension"
+  },
+  "extensionDescription": {
+    "message": "خذ ملاحظات سريعة من متصفحك. استخدم العلامات لتنظيم ملاحظاتك. لا حاجة لتسجيل الدخول أو الاشتراك.",
+    "description": "The description of the extension"
+  },
+  "welcomeMessage": {
+    "message": "مرحبًا",
+    "description": "The welcome message"
+  },
+  "quickNoteLabel": {
+    "message": "ملاحظة سريعة",
+    "description": "The quick note message"
+  },
+  "sortNewest": {
+    "message": "الأحدث أولاً",
+    "description": "The order of the notes"
+  },
+  "sortOldest": {
+    "message": "الأقدم أولاً",
+    "description": "The order of the notes"
+  },
+  "filterAll": {
+    "message": "الكل",
+    "description": "The filter of the notes"
+  },
+  "noNotes": {
+    "message": "لا توجد ملاحظات بعد. ابدأ بإضافة ملاحظة جديدة!",
+    "description": "Message shown when the user has no saved notes."
+  },
+  "deleteTagAlert": {
+    "message": "هل أنت متأكد أنك تريد حذف هذه العلامة؟ لا يمكن التراجع عن هذا الإجراء.",
+    "description": "Confirmation alert shown before permanently deleting a tag."
+  },
+  "deleteAlert": {
+    "message": "هل أنت متأكد أنك تريد حذف هذه الملاحظة؟ لا يمكن التراجع عن هذا الإجراء.",
+    "description": "Confirmation alert shown before permanently deleting a note."
+  },
+  "addNote": {
+    "message": "إضافة ملاحظة",
+    "description": "The add note button"
+  },
+  "noteTitle": {
+    "message": "عنوان الملاحظة",
+    "description": "The note title input"
+  },
+  "addTagInput": {
+    "message": "إضافة علامة جديدة",
+    "description": "The add tag input"
+  },
+  "addTag": {
+    "message": "إضافة علامة",
+    "description": "The add tag button"
+  },
+  "selectTag": {
+    "message": "اختر علامة",
+    "description": "The select tag input"
+  },
+  "newNote": {
+    "message": "اكتب ملاحظتك هنا",
+    "description": "The new note textarea placeholder"
+  },
+  "saveNote": {
+    "message": "حفظ الملاحظة",
+    "description": "The save note button"
+  },
+  "blankNote": {
+    "message": "لا يمكن أن يكون عنوان الملاحظة والمحتوى فارغين",
+    "description": "The message when note title and content are blank"
+  },
+  "openLink": {
+    "message": "فتح الرابط",
+    "description": "The open link button"
+  },
+  "created": {
+    "message": "تم الإنشاء",
+    "description": "The created date of the note"
+  },
+  "updated": {
+    "message": "تم التحديث",
+    "description": "The updated date of the note"
+  },
+  "editNote": {
+    "message": "تحرير الملاحظة",
+    "description": "The edit note button"
+  },
+  "updateNote": {
+    "message": "تحديث الملاحظة",
+    "description": "The update note button"
+  },
+  "deleteNote": {
+    "message": "حذف الملاحظة",
+    "description": "The delete note button"
+  },
+  "about": {
+    "message": "حول"
+  },
+  "faqQuestion1": {
+    "message": "ما هي ملاحظات أساسية؟",
+    "description": "The first question of the FAQ"
+  },
+  "faqAnswer1": {
+    "message": "ملاحظات أساسية هي إضافة تتيح لك تدوين الملاحظات على متصفحك. إنها إضافة بسيطة وسهلة الاستخدام تتيح لك تدوين الملاحظات أثناء التنقل. تهدف إلى أن تكون خفيفة الوزن وتركز على الخصوصية.",
+    "description": "The answer of the first question of the FAQ"
+  },
+  "faqQuestion2": {
+    "message": "هل لديك اقتراح أو وجدت خطأ؟",
+    "description": "The second question of the FAQ"
+  },
+  "faqAnswer2": {
+    "message": "أبلغ عن المشكلات واقترح التحسينات هنا:",
+    "description": "The answer of the second question of the FAQ"
+  },
+  "faqQuestion3": {
+    "message": "هل تريد الوصول إلى المطور؟",
+    "description": "The third question of the FAQ"
+  },
+  "faqAnswer3": {
+    "message": "يمكنك الوصول إلى المطور على عنوان البريد الإلكتروني التالي:",
+    "description": "The answer of the third question of the FAQ"
+  },
+  "faqQuestion4": {
+    "message": "هل أعجبتك الإضافة؟",
+    "description": "The fourth question of the FAQ"
+  },
+  "faqAnswer4": {
+    "message": "هل تستمتع بملاحظات أساسية؟ ادعمنا من خلال إعطاء تقييم 5 نجوم ومشاركة مع الأصدقاء!",
+    "description": "The answer of the fourth question of the FAQ"
+  },
+  "languageSelect": {
+    "message": "اختر اللغة",
+    "description": "The select language input"
+  },
+  "defaultLanguage": {
+    "message": "لغة المتصفح",
+    "description": "The default language"
+  },
+  "openPopup": {
+    "message": "افتح في نافذة جديدة",
+    "description": "The open popup button"
+  },
+  "openPopupTooltip": {
+    "message": "إذا كنت لا ترغب في إغلاق ملاحظتك عند التفاعل مع المتصفح، يمكنك فتحها في نافذة جديدة.",
+    "description": "The open popup tooltip"
+  }
+}

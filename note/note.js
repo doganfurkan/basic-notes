@@ -19,12 +19,12 @@ if (note) {
     content.textContent = contentText;
         
     // Create and add links for each URL after the text
-    urls.forEach((url, index) => {
+    urls.forEach(async (url, index) => {
       const link = document.createElement('a');
       link.href = url;
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
-      let linkText = urls.length > 1 ? `Open Link ${index + 1}` : 'Open Link';
+      let linkText = urls.length > 1 ? await localize("openLink") + " " + index : await localize("openLink");
       link.textContent = linkText;
           
       const img = document.createElement('img');
@@ -59,8 +59,12 @@ document.getElementById("deleteNote").addEventListener("click", () => {
   deleteNote(noteId);
 });
 
-function deleteNote(a) {
-  if (window.confirm("Do you want to delete this item?")) {
+document.getElementById("openPopup").addEventListener("click", () => {
+  openPopup();
+});
+
+async function deleteNote(a) {
+  if (window.confirm(await localize("deleteNoteAlert"))) {
     notes.splice(a, 1);
     console.log(`Note number ${a} is deleted`);
     localStorage.setItem("notes", JSON.stringify(notes));
@@ -68,20 +72,37 @@ function deleteNote(a) {
   }
 }
 
-if(note.timestamp){
-  const date = new Date(note.timestamp);
-  const timestampElement = document.getElementById("note-created");
-  timestampElement.textContent = `Created: ${date.toLocaleString(undefined, {
-    dateStyle: 'medium',
-    timeStyle: 'short'
-  })}`;
+function openPopup(){
+  chrome.windows.create({
+    url: chrome.runtime.getURL(`note/note.html?id=${noteId}`),
+    type: 'popup',
+    width: 500,
+    height: 600
+  });
 }
 
-if(note.updated){
-  const date = new Date(note.updated);
-  const updatedElement = document.getElementById("note-updated");
-  updatedElement.textContent = `Updated: ${date.toLocaleString(undefined, {
-    dateStyle: 'medium',
-    timeStyle: 'short'
-  })}`;
+async function showCreatedDate() {
+  if(note.timestamp){
+    const date = new Date(note.timestamp);
+    const timestampElement = document.getElementById("note-created");
+    timestampElement.textContent = `${await localize("created")}: ${date.toLocaleString(undefined, {
+      dateStyle: 'medium',
+      timeStyle: 'short'
+    })}`;
+  }
 }
+
+showCreatedDate();
+
+async function showUpdatedDate() {
+  if(note.updated){
+    const date = new Date(note.updated);
+    const updatedElement = document.getElementById("note-updated");
+    updatedElement.textContent = `${await localize("updated")}: ${date.toLocaleString(undefined, {
+      dateStyle: 'medium',
+      timeStyle: 'short'
+    })}`;
+  }
+}
+
+showUpdatedDate();
