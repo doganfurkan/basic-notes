@@ -23,6 +23,18 @@
     "message": "Älteste zuerst",
     "description": "The order of the notes"
   },
+  "search": {
+    "message": "Suchen",
+    "description": "Search box toggle button"
+  },
+  "resultsMessage": {
+    "message": "$3 Ergebnisse für $1 mit dem Tag $2",
+    "description": "$1 = search term, $2 = tag, $3 = result count"
+  },
+  "clearSearch": {
+    "message": "Suche löschen",
+    "description": "The clear search button"
+  },
   "filterAll": {
     "message": "Alle",
     "description": "The filter of the notes"
@@ -146,5 +158,4 @@
     "message": "Wenn Sie nicht möchten, dass Ihre Notiz geschlossen wird, wenn Sie mit dem Browser interagieren, können Sie sie in einem neuen Fenster öffnen.",
     "description": "The open popup tooltip"
   }
-
 }

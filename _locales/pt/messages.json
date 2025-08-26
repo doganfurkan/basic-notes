@@ -23,6 +23,18 @@
     "message": "Mais Antigas Primeiro",
     "description": "A ordem das notas"
   },
+  "search": {
+		"message": "Pesquisar",
+		"description": "Search box toggle button"
+	},
+	"resultsMessage": {
+		"message": "$3 resultados para $1 com a tag $2",
+		"description": "$1 = search term, $2 = tag, $3 = result count"
+	},
+	"clearSearch": {
+		"message": "Limpar pesquisa",
+		"description": "The clear search button"
+	},
   "filterAll": {
     "message": "Todas",
     "description": "O filtro das notas"

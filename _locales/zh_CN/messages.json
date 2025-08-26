@@ -23,6 +23,18 @@
         "message": "最旧优先",
         "description": "The order of the notes"
     },
+    "search": {
+		"message": "搜索",
+		"description": "Search box toggle button"
+	},
+	"resultsMessage": {
+		"message": "$3 个结果，针对 $1 的 $2 标签",
+		"description": "$1 = search term, $2 = tag, $3 = result count"
+	},
+	"clearSearch": {
+		"message": "清除搜索",
+		"description": "The clear search button"
+	},
     "filterAll": {
         "message": "全部",
         "description": "The filter of the notes"
