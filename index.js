@@ -251,8 +251,15 @@ async function sortNotes() {
     "sorting",
     !document.getElementById("sort").classList.contains("ters")
   );
-  allNotes();
-  update();
+  if (searching) {
+    searchNotes();
+    return;
+  } else if (filtered) {
+    filterNotes(filtered);
+    return;
+  } else {
+    update();
+  }
 }
 
 document.getElementById("toggleSearch").addEventListener("click", () => {
@@ -261,7 +268,6 @@ document.getElementById("toggleSearch").addEventListener("click", () => {
 
 document.getElementById("search").addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
-    console.log("Enter key pressed");
     searchNotes();
   }
 });
@@ -270,7 +276,6 @@ document.getElementById("searchButton").addEventListener("click", searchNotes);
 
 async function searchNotes() {
   const searchTerm = document.getElementById("search").value.toLowerCase();
-  console.log(searchTerm);
   if (searchTerm.trim() === "") {
     allNotes();
     searching = false;
@@ -342,9 +347,15 @@ async function searchNotes() {
         document.getElementById("list").appendChild(s);
       });
     }
-    let resultInfo = await chrome.i18n.getMessage("resultsMessage", [
+    console.log(filteredNotes.length);
+
+    let allFilter = await localize("filterAll");
+    let quickFilter = await localize("QuickNoteLabel");
+    let setTag = filtered === "Quick Note" ? quickFilter : filtered;
+    let resultInfo = await localizeWithParams("resultsMessage", [
       searchTerm,
-      filtered !== "" ? filtered : "All",
+      setTag !== "" ? setTag : allFilter,
+      filteredNotes.length,
     ]);
     document.getElementById("resultCount").textContent = resultInfo;
 
