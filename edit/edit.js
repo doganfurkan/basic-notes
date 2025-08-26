@@ -85,12 +85,12 @@ document.getElementById("addTag").addEventListener("click", () => {
 
   if (tagText) {
     // Get existing tags from localStorage or initialize empty array
-    let savedTags = JSON.parse(localStorage.getItem("savedTags") || "[]");
+    let savedTags = JSON.parse(localStorage.getItem("tags") || "[]");
 
     // Add new tag if it doesn't exist
     if (!savedTags.includes(tagText)) {
       savedTags.push(tagText);
-      localStorage.setItem("savedTags", JSON.stringify(savedTags));
+      localStorage.setItem("tags", JSON.stringify(savedTags));
     }
 
     const tagsContainer = document.getElementById("selected-tags");
