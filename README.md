@@ -23,6 +23,10 @@ Perfect for students, developers, or anyone who needs a quick and organized way 
 
 ## Installation
 
+### For Chrome and other Chromium-based browsers
+
+[![Basic Notes on Chrome Web Store](assets/chromewebstore.png)](https://chromewebstore.google.com/detail/bnibiahlnobgfgapcefojphhhgimabgd?utm_source=item-share-cb)
+
 ### For Firefox
 
 Download the extension from [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/basic-notes/).
