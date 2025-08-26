@@ -146,6 +146,10 @@ input#search{
   background: var(--bgSubtle);
 }
 
+.tag-delete{
+  color:inherit
+}
+
 #filters > button {
   padding: 5px 0;
   font-size: 0.9rem;

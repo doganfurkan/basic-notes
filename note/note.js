@@ -64,7 +64,7 @@ document.getElementById("openPopup").addEventListener("click", () => {
 });
 
 async function deleteNote(a) {
-  if (window.confirm(await localize("deleteNoteAlert"))) {
+  if (window.confirm(await localize("deleteAlert"))) {
     notes.splice(a, 1);
     console.log(`Note number ${a} is deleted`);
     localStorage.setItem("notes", JSON.stringify(notes));

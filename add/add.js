@@ -14,12 +14,6 @@ if (localStorage.getItem("tags")) {
     });
 }
 
-
-// Generate unique ID
-function generateUniqueId() {
-    return Date.now().toString(36) + Math.random().toString(36).substr(2);
-}
-
 // Note saving functionality
 async function saveNote() {
     const title = document.getElementById("title").value;
@@ -32,7 +26,6 @@ async function saveNote() {
     }
 
     const note = {
-        id: generateUniqueId(),
         title,
         content,
         tags,
