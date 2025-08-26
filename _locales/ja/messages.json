@@ -23,6 +23,18 @@
     "message": "古い順",
     "description": "The order of the notes"
   },
+  "search": {
+    "message": "検索",
+    "description": "Search box toggle button"
+  },
+  "resultsMessage": {
+    "message": "$3 件の結果：$1 に対して $2 タグ",
+    "description": "$1 = search term, $2 = tag, $3 = result count"
+  },
+  "clearSearch": {
+    "message": "検索をクリア",
+    "description": "The clear search button"
+  },
   "filterAll": {
     "message": "すべて",
     "description": "The filter of the notes"

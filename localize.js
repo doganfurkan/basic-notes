@@ -36,6 +36,31 @@ async function localize(messageKey) {
   return localized;
 }
 
+async function localizeWithParams(messageKey, params) {
+  var localized;
+  if (localStorage.getItem("prefferedLanguage") === "default") {
+    localized = chrome.i18n.getMessage(messageKey, params);
+  } else {
+    await fetch(
+      chrome.runtime.getURL(
+        `_locales/${localStorage.getItem("prefferedLanguage")}/messages.json`
+      )
+    )
+      .then((response) => response.json())
+      .then((messages) => {
+        let message = messages[messageKey].message;
+        params.forEach((param, index) => {
+          const placeholder = `$${index + 1}`;
+          message = message.replace(placeholder, param);
+        });
+        localized = message;
+      });
+  }
+  checkRTL();
+  return localized;
+}
+
+
 function checkRTL() {
   if (
     localStorage.getItem("prefferedLanguage") === "ar"

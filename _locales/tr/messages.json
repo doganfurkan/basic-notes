@@ -23,6 +23,18 @@
     "message": "Önce En Eski",
     "description": "The order of the notes"
   },
+  "search": {
+    "message": "Ara",
+    "description": "Search box toggle button"
+  },
+  "resultsMessage": {
+    "message": "$1 için $2 etiketi ile $3 sonuç bulundu",
+    "description": "$1 = search term, $2 = tag, $3 = result count"
+  },
+  "clearSearch": {
+    "message": "Aramayı Temizle",
+    "description": "The clear search button"
+  },
   "filterAll": {
     "message": "Tümü",
     "description": "The filter of the notes"

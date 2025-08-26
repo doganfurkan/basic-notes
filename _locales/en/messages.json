@@ -23,6 +23,18 @@
     "message": "Oldest First",
     "description": "The order of the notes"
   },
+  "search": {
+    "message": "Search",
+    "description": "Search box toggle button"
+  },
+  "resultsMessage": {
+    "message": "$3 results for $1 with $2 tag",
+    "description": "$1 = search term, $2 = tag, $3 = result count"
+  },
+  "clearSearch": {
+    "message": "Clear Search",
+    "description": "The clear search button"
+  },
   "filterAll": {
     "message": "All",
     "description": "The filter of the notes"

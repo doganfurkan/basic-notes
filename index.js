@@ -1,6 +1,9 @@
 document.getElementById("sort").addEventListener("click", sortNotes);
 document.getElementById("quickNote").addEventListener("keypress", check);
 
+var filtered = "";
+var searching = false;
+
 let notes = localStorage.getItem("notes")
   ? JSON.parse(localStorage.getItem("notes"))
   : [];
@@ -133,43 +136,50 @@ tags.forEach((tag) => {
 
 async function filterNotes(tag) {
   if (notes.length > 0) {
-    const filteredNotes = notes.filter((note) => {
+    let filteredNotes = notes.filter((note) => {
       // Handle both old string notes and new note objects with tags
       if (typeof note === "string") return false;
       return note.tags && note.tags.includes(tag);
     });
+    filtered = tag;
 
     if (filteredNotes.length === 0) {
       const noNotes = document.createElement("span");
       noNotes.textContent = await localize("noNotes");
+      document.getElementById("list").innerHTML = "";
       document.getElementById("list").appendChild(noNotes);
     } else {
-      document.getElementById("list").innerHTML = "";
-      filteredNotes.forEach((note, index) => {
-        let s = document.createElement("div");
-        const noteIndex = notes.indexOf(note);
-        let span = document.createElement("span");
-        span.textContent = note.title ? note.title : note.content;
+      if (searching) {
+        searchNotes();
+        return;
+      } else {
+        document.getElementById("list").innerHTML = "";
+        filteredNotes.forEach((note, index) => {
+          let s = document.createElement("div");
+          const noteIndex = notes.indexOf(note);
+          let span = document.createElement("span");
+          span.textContent = note.title ? note.title : note.content;
 
-        let button = document.createElement("button");
-        button.className = "deleteButton";
-        button.setAttribute("dataId", noteIndex);
+          let button = document.createElement("button");
+          button.className = "deleteButton";
+          button.setAttribute("dataId", noteIndex);
 
-        let img = document.createElement("img");
-        img.src = "images/trash-simple-fill.svg";
+          let img = document.createElement("img");
+          img.src = "images/trash-simple-fill.svg";
 
-        button.appendChild(img);
-        s.appendChild(span);
-        s.appendChild(button);
+          button.appendChild(img);
+          s.appendChild(span);
+          s.appendChild(button);
 
-        if (typeof note === "object") {
-          s.querySelector("span").style.cursor = "pointer";
-          s.querySelector("span").addEventListener("click", () => {
-            window.location.href = `note/note.html?id=${noteIndex}`;
-          });
-        }
-        document.getElementById("list").appendChild(s);
-      });
+          if (typeof note === "object") {
+            s.querySelector("span").style.cursor = "pointer";
+            s.querySelector("span").addEventListener("click", () => {
+              window.location.href = `note/note.html?id=${noteIndex}`;
+            });
+          }
+          document.getElementById("list").appendChild(s);
+        });
+      }
     }
   }
 }
@@ -181,6 +191,11 @@ function allNotes() {
     btn.classList.remove("chosen");
   });
   document.getElementById("all").classList.add("chosen");
+  filtered = "";
+  if (searching) {
+    searchNotes();
+    return;
+  }
   update();
 }
 
@@ -236,6 +251,125 @@ async function sortNotes() {
     "sorting",
     !document.getElementById("sort").classList.contains("ters")
   );
-  allNotes();
-  update();
+  if (searching) {
+    searchNotes();
+    return;
+  } else if (filtered) {
+    filterNotes(filtered);
+    return;
+  } else {
+    update();
+  }
 }
+
+document.getElementById("toggleSearch").addEventListener("click", () => {
+  document.getElementById("searchContainer").classList.toggle("hidden");
+});
+
+document.getElementById("search").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    searchNotes();
+  }
+});
+
+document.getElementById("searchButton").addEventListener("click", searchNotes);
+
+async function searchNotes() {
+  const searchTerm = document.getElementById("search").value.toLowerCase();
+  if (searchTerm.trim() === "") {
+    allNotes();
+    searching = false;
+    return;
+  } else {
+    let filteredNotes;
+    if (filtered) {
+      filteredNotes = notes.filter((note) => {
+        if (typeof note === "string") {
+          return (
+            note.toLowerCase().includes(searchTerm) &&
+            note.tags &&
+            note.tags.includes(filtered)
+          );
+        } else {
+          return (
+            (note.title.toLowerCase().includes(searchTerm) &&
+              note.tags &&
+              note.tags.includes(filtered)) ||
+            (note.content.toLowerCase().includes(searchTerm) &&
+              note.tags &&
+              note.tags.includes(filtered))
+          );
+        }
+      });
+    } else {
+      filteredNotes = notes.filter((note) => {
+        if (typeof note === "string") {
+          return note.toLowerCase().includes(searchTerm);
+        } else {
+          return (
+            note.title.toLowerCase().includes(searchTerm) ||
+            note.content.toLowerCase().includes(searchTerm)
+          );
+        }
+      });
+    }
+
+    if (filteredNotes.length === 0) {
+      const noNotes = document.createElement("span");
+      noNotes.textContent = await localize("noNotes");
+      document.getElementById("list").innerHTML = "";
+      document.getElementById("list").appendChild(noNotes);
+    } else {
+      document.getElementById("list").innerHTML = "";
+      filteredNotes.forEach((note, index) => {
+        let s = document.createElement("div");
+        const noteIndex = notes.indexOf(note);
+        let span = document.createElement("span");
+        span.textContent = note.title ? note.title : note.content;
+
+        let button = document.createElement("button");
+        button.className = "deleteButton";
+        button.setAttribute("dataId", noteIndex);
+
+        let img = document.createElement("img");
+        img.src = "images/trash-simple-fill.svg";
+
+        button.appendChild(img);
+        s.appendChild(span);
+        s.appendChild(button);
+
+        if (typeof note === "object") {
+          s.querySelector("span").style.cursor = "pointer";
+          s.querySelector("span").addEventListener("click", () => {
+            window.location.href = `note/note.html?id=${noteIndex}`;
+          });
+        }
+        document.getElementById("list").appendChild(s);
+      });
+    }
+    console.log(filteredNotes.length);
+
+    let allFilter = await localize("filterAll");
+    let quickFilter = await localize("QuickNoteLabel");
+    let setTag = filtered === "Quick Note" ? quickFilter : filtered;
+    let resultInfo = await localizeWithParams("resultsMessage", [
+      searchTerm,
+      setTag !== "" ? setTag : allFilter,
+      filteredNotes.length,
+    ]);
+    document.getElementById("resultCount").textContent = resultInfo;
+
+    searching = true;
+    !document.getElementById("resultInfo").classList.contains("active") &&
+      document.getElementById("resultInfo").classList.add("active");
+  }
+}
+
+document.getElementById("clearSearch").addEventListener("click", () => {
+  document.getElementById("search").value = "";
+  document.getElementById("resultCount").textContent = "";
+  searching = false;
+  filtered = "";
+  document.getElementById("resultInfo").classList.remove("active");
+  allNotes();
+});

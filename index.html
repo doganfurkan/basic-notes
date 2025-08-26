@@ -43,11 +43,25 @@
         />
         <span></span>
       </button>
-      <div id="filters-shadow">
-        <div id="filters-container">
-          <span id="all" class="chosen" data-i18n="filterAll"></span>
-          <span id="quick" data-i18n="quickNoteLabel"></span>
-        </div>
+      <button id="toggleSearch">
+        <img src="/images/magnifying-glass.svg" alt="Search" />
+        <span data-i18n="search"></span>
+      </button>
+    </div>
+    <div id="searchContainer" class="hidden">
+      <div id="searchBox">
+        <input type="text" id="search" placeholder="" data-i18n="search" />
+        <button id="searchButton">
+          <img src="/images/magnifying-glass.svg" alt="Search" />
+        </button>
+      </div>
+      <div id="resultInfo">
+        <span id="resultCount"></span>
+        <button id="clearSearch" data-i18n="clearSearch"></button>
+      </div>
+      <div id="filters-container">
+        <span id="all" class="chosen" data-i18n="filterAll"></span>
+        <span id="quick" data-i18n="quickNoteLabel"></span>
       </div>
     </div>
     <div id="list"></div>

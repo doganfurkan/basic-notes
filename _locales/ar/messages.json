@@ -23,6 +23,18 @@
     "message": "الأقدم أولاً",
     "description": "The order of the notes"
   },
+  "search": {
+		"message": "بحث",
+		"description": "Search box toggle button"
+	},
+	"resultsMessage": {
+		"message": "$3 نتائج لـ $1 مع الوسم $2",
+		"description": "$1 = search term, $2 = tag, $3 = result count"
+	},
+	"clearSearch": {
+		"message": "مسح البحث",
+		"description": "The clear search button"
+	},
   "filterAll": {
     "message": "الكل",
     "description": "The filter of the notes"

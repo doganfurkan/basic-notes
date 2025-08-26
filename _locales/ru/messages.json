@@ -23,6 +23,18 @@
     "message": "Сначала старые",
     "description": "The order of the notes"
   },
+  "search": {
+		"message": "Поиск",
+		"description": "Search box toggle button"
+	},
+	"resultsMessage": {
+		"message": "$3 результатов для $1 с тегом $2",
+		"description": "$1 = search term, $2 = tag, $3 = result count"
+	},
+	"clearSearch": {
+		"message": "Очистить поиск",
+		"description": "The clear search button"
+	},
   "filterAll": {
     "message": "Все",
     "description": "The filter of the notes"
